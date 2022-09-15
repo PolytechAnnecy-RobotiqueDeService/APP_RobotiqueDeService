@@ -1,0 +1,85 @@
+
+h1 {
+	text-align : center;
+}
+/;
+div#fond{
+	height : 800px;
+	width : 1280px;
+}
+
+img{
+	width : 50%;
+}
+
+ul.navbar {
+	list-style: none;
+}
+ul#etage2{
+  background-image: url("sallestp.jpg");
+  width: 700px;
+  height:721px;
+  padding: 0;
+  margin: 10px auto;
+  width: 50%;
+  position: relative;
+  list-style: none;
+}
+ul#etage2 li a{
+  position:absolute;
+  text-decoration: none;
+}
+
+ul#etage2 li#c206 a  { top: 38px; left: 7px; width: 66px; height: 73px; }
+ul#etage2 li#c207 a  { top: 38px; left: 76px; width: 65px; height: 73px; }
+ul#etage2 li#c208 a  { top: 38px; left: 145px; width: 49px; height: 73px; }
+ul#etage2 li#c209 a  { top: 38px; left: 198px; width: 47px; height: 73px; }
+ul#etage2 li#c210 a  { top: 38px; left: 250px; width: 44px; height: 73px; }
+ul#etage2 li#c213 a  { top: 38px; left: 360px; width: 82px; height: 73px; }
+ul#etage2 li#c214 a  { top: 38px; left: 447px; width: 82px; height: 73px; }
+ul#etage2 li#c215 a  { top: 38px; left: 533px; width: 82px; height: 73px; }
+
+ul#etage2 li a:hover {
+  background: rgba(255,180,123,0.5);
+}
+ul#etage2 li a span{
+  display: none;
+}
+ul#etage2 li a:hover span{
+  display:block;
+}
+.topnav {
+display:flex;
+justify-content:center;
+background-color: #657298;
+    }
+
+/* Style the topnav links */
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#image1{
+
+  border-radius:2%;
+}
+.header {
+  background-image: url('https://i.pinimg.com/originals/4f/03/57/4f035770dda29386e2679a3ca9446d93.jpg');
+  padding: 2px;
+  text-align: center;
+
+}
+#footer{
+  color: #ddd;
+  text-align: center;
+  padding: 14px 16px;
+}
