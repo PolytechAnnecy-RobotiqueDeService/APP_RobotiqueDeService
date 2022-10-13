@@ -1,14 +1,14 @@
 body{
   background-image: url('https://i.pinimg.com/originals/4f/03/57/4f035770dda29386e2679a3ca9446d93.jpg');
   text-align: center;
+  flex: flex;
 }
 
-
+/*accueil*/
 
 .presentation{
   color: azure;
 }
-
 
 .selection_destination{
   flex : flex;
@@ -26,6 +26,18 @@ body{
 }
 
 
+/*étages*/
+
+.plan{
+  align-self: left;
+
+}
+
+
+
+
+
+
 
 
 /*Hamza*/
@@ -34,11 +46,6 @@ body{
 p.image1 {
 	text-align : center;
 }
-h1 {
-	text-align: center;
-}
-
-
 
 
 h1 {
