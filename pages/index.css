@@ -1,8 +1,50 @@
+body{
+  background-image: url('https://i.pinimg.com/originals/4f/03/57/4f035770dda29386e2679a3ca9446d93.jpg');
+  text-align: center;
+}
+
+
+
+.presentation{
+  color: azure;
+}
+
+
+.selection_destination{
+  flex : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.child{
+  align-self: stretch;
+}
+
+.bouton{
+  width: 100%;
+}
+
+
+
+
+/*Hamza*/
+
+
+p.image1 {
+	text-align : center;
+}
+h1 {
+	text-align: center;
+}
+
+
+
 
 h1 {
 	text-align : center;
 }
-/;
+
 div#fond{
 	height : 800px;
 	width : 1280px;
@@ -48,14 +90,14 @@ ul#etage2 li a span{
 ul#etage2 li a:hover span{
   display:block;
 }
-.topnav {
+.navigation {
 display:flex;
 justify-content:center;
 background-color: #657298;
     }
 
 /* Style the topnav links */
-.topnav a {
+.navigation a {
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -64,7 +106,7 @@ background-color: #657298;
 }
 
 /* Change color on hover */
-.topnav a:hover {
+.navigation a:hover {
   background-color: #ddd;
   color: black;
 }
