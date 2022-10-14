@@ -20,10 +20,24 @@
     background-color: blue;
     opacity : 0.7;
 }
-
 .info_libre{
     position : relative;
     background-color: turquoise;
+    opacity: 0.7;
+}
+.polybot{
+    position : relative;
+    background-color: rgb(224, 70, 96);
+    opacity: 0.7;
+}
+.bureaux{
+    position : relative;
+    background-color: green;
+    opacity: 0.7;
+}
+.elec{
+    position : relative;
+    background-color: orange;
     opacity: 0.7;
 }
 
@@ -38,6 +52,11 @@
 #C217{ bottom: 154px; left: 394px; width: 37px; height: 50px; }
 #C209{ bottom: 272px; left: 201px; width: 35px; height: 50px; }
 #C210{ bottom: 322px; left: 237px; width: 32px; height: 50px; }
+#B205{ bottom: 137px; left: 271px; width: 32px; height: 40px; }
+#A206{ bottom: 118px; left: 511px; width: 25px; height: 182px; }
+#A212{ bottom: 268px; left: 475px; width: 36px; height: 147px; }
+#A202{ bottom: 503px; left: 340px; width: 76px; height: 36px; }
+#A221{ bottom: 453px; left: 351px; width: 62px; height: 149px; }
 
 
 .details{
@@ -73,4 +92,24 @@
     border : solid 1px black;
     margin-right: 2px;
 }
-
+#legende_polybot{
+    background-color: rgb(224, 70, 96);
+    width: 20px;
+    height: 15px;
+    border : solid 1px black;
+    margin-right: 2px;
+}
+#legende_bureaux{
+    background-color: green;
+    width: 20px;
+    height: 15px;
+    border : solid 1px black;
+    margin-right: 2px;
+}
+#legende_elec{
+    background-color: orange;
+    width: 20px;
+    height: 15px;
+    border : solid 1px black;
+    margin-right: 2px;
+}
