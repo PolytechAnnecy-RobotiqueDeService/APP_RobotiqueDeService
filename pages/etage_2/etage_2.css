@@ -1,0 +1,76 @@
+.contenu{
+    display : flex;
+    flex-direction : row;
+    justify-content: space-around;
+}
+
+.plan{
+    background-image: url("../images/plan_etage_2.png");
+    width : 600px;
+    height : 650px;
+}
+
+.APP{
+    position : relative;
+    background-color: red;
+    opacity : 0.7;
+}
+.info{
+    position : relative;
+    background-color: blue;
+    opacity : 0.7;
+}
+
+.info_libre{
+    position : relative;
+    background-color: turquoise;
+    opacity: 0.7;
+}
+
+
+#C202{ top: 164px; left: 202px; width: 66px; height: 50px; }
+#A205{ top: 287px; left: 513px; width: 25px; height: 40px; }
+#A217{ top: 300px; left: 440px; width: 53px; height: 30px; }
+#C213{ bottom: 20px; left: 315px; width: 56px; height: 50px; }
+#C214{ bottom: 70px; left: 375px; width: 56px; height: 50px; }
+#C215{ bottom: 120px; left: 437px; width: 56px; height: 50px; }
+#C216{ bottom: 103px; left: 435px; width: 58px; height: 50px; }
+#C217{ bottom: 154px; left: 394px; width: 37px; height: 50px; }
+#C209{ bottom: 272px; left: 201px; width: 35px; height: 50px; }
+#C210{ bottom: 322px; left: 237px; width: 32px; height: 50px; }
+
+
+.details{
+    display : flex; 
+    flex-direction : column;
+    width : 600px;
+}
+
+.legend{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#legende_app{
+    background-color: red;
+    width : 20px;
+    height : 15px;
+    border : solid 1px black;
+    margin-right: 2px;
+}
+#legende_info{
+    background-color: blue;
+    width: 20px;
+    height: 15px;
+    border : solid 1px black;
+    margin-right: 2px;
+}
+#legende_info_libre{
+    background-color: lightblue;
+    width: 20px;
+    height: 15px;
+    border : solid 1px black;
+    margin-right: 2px;
+}
+
