@@ -8,49 +8,177 @@
 	<title>Deuxième étage</title>
 </head>
 
+<header>
+    <a href="../../index.html"><input type="button" value="accueil"></a>
+</header>
 
 <body>
     <h1>Deuxième étage</h1>
 
+    <!--Division contenant toutes les parties propre à la page-->
     <div class ="contenu">
 
+        <!--Division contenant le plan ainsi que toutes les différentes zones cliquables dudit plan-->
         <div class="plan">
-            <div class = "APP" id = "C202"></div>
-            <div class = "APP" id = "A205"></div>
-            <div class = "APP" id = "A217"></div>
-            <div class = "info" id = "C213"></div>
-            <div class = "info" id = "C214"></div>
-            <div class = "info" id = "C215"></div>
-            <div class = "info" id = "C216"></div>
-            <div class = "info" id = "C217"></div>
-            <div class = "info_libre" id = "C209"></div>
-            <div class = "info_libre" id = "C210"></div>
-            <div class = "polybot" id = "B205"></div>
-            <div class = "bureaux" id = "A206"></div>
-            <div class = "bureaux" id = "A212"></div>
-            <div class = "elec" id = "A202"></div>
-            <div class = "bureaux" id = "A221"></div>
+
+            <!--Division contenant le bouton de la salle C202-->
+            <div class="APP" id = "C202">
+                <!--Bouton permettant de sélectionner la salle C202-->
+                <input type="checkbox" id="btn_C202"/>
+                <label class="btn_APP" for="btn_C202"></label>
+            </div>
+            
+            <div class = "APP" id = "A205">
+                <input type="checkbox" id="btn_A205"/>
+                <label class="btn_APP" for="btn_A205"></label>
+            </div>
+
+            <div class = "APP" id = "A217">
+                <input type="checkbox" id="btn_A217"/>
+                <label class="btn_APP" for="btn_A217"></label>
+            </div>
+
+            <div class = "info" id = "C213">
+                <input type="checkbox" id="btn_C213"/>
+                <label class="btn_info" for="btn_C213"></label>
+            </div>
+
+            <div class = "info" id = "C214">
+                <input type="checkbox" id="btn_C214"/>
+                <label class="btn_info" for="btn_C214"></label>
+            </div>
+
+            <div class = "info" id = "C215">
+                <input type="checkbox" id="btn_C215"/>
+                <label class="btn_info" for="btn_C215"></label>
+            </div>
+
+            <div class = "info" id = "C216">
+                <input type="checkbox" id="btn_C216"/>
+                <label class="btn_info" for="btn_C216"></label>
+            </div>
+
+            <div class = "info" id = "C217">
+                <input type="checkbox" id="btn_C217"/>
+                <label class="btn_info" for="btn_C217"></label>
+            </div>
+
+            <div class = "info_libre" id = "C209">
+                <input type="checkbox" id="btn_C209"/>
+                <label class="btn_info_libre" for="btn_C209"></label>
+            </div>
+
+            <div class = "info_libre" id = "C210">
+                <input type="checkbox" id="btn_C210"/>
+                <label class="btn_info_libre" for="btn_C210"></label>
+            </div>
+
+            <div class = "polybot" id = "B205">
+                <input type="checkbox" id="btn_B205"/>
+                <label class="btn_polybot" for="btn_B205"></label>
+            </div>
+
+            <div class = "bureaux" id = "A206">
+                <input type="checkbox" id="btn_A206"/>
+                <label class="btn_bureaux" for="btn_A206"></label>
+            </div>
+
+            <div class = "bureaux" id = "A212">
+                <input type="checkbox" id="btn_A212"/>
+                <label class="btn_bureaux" for="btn_A212"></label>
+            </div>
+
+            <div class = "elec" id = "A202">
+                <input type="checkbox" id="btn_A202"/>
+                <label class="btn_elec" for="btn_A202"></label>
+            </div>
+
+            <div class = "bureaux" id = "A221">
+                <input type="checkbox" id="btn_A221"/>
+                <label class="btn_bureaux" for="btn_A221"></label>
+            </div>
+
+            <div class = "decloi" id = "C206">
+                <input type="checkbox" id="btn_C206"/>
+                <label class="btn_decloi" for="btn_C206"></label>
+            </div>
+
+            <div class = "bureaux" id = "B202">
+                <input type="checkbox" id="btn_B202"/>
+                <label class="btn_bureaux" for="btn_B202"></label>
+            </div>
+
+            <div class = "info_libre" id = "C208">
+                <input type="checkbox" id="btn_C208"/>
+                <label class="btn_info_libre" for="btn_C208"></label>
+            </div>
+
+            <div class = "TD" id = "C203">
+                <input type="checkbox" id="btn_C203"/>
+                <label class="btn_TD" for="btn_C203"></label>
+            </div>
+
+            <div class = "TD" id = "A203">
+                <input type="checkbox" id="btn_A203"/>
+                <label class="btn_TD" for="btn_A203"></label>
+            </div>
+
         </div>
 
+        <!--Division contenant la légende et les descriptions des salles-->
         <div class ="details">
 
+            <!--Division contenant les légendes des différentes zones cliquables du plan-->
             <div class = "legende">
                 <h2>Légendes</h2>
-                <div class = legend><div id="legende_app"></div> - Les salles d'APP</div> 
-                <div class = legend><div id="legende_info"></div> - Les salles informatiques</div>
-                <div class = legend><div id="legende_info_libre"></div> - Les salles informatiques en libre service</div>
-                <div class = legend><div id="legende_polybot"></div> - Polybot</div>
-                <div class = legend><div id="legende_bureaux"></div> - Bureaux</div>
-                <div class = legend><div id="legende_elec"></div> - Les salles d'électricité</div>
+
+                <!--Division contenant la première légende-->
+                <div class = legend>
+                    <!--Division permettant de créer le carré de couleur pour la légende-->
+                    <div id="legende_app"></div>
+                    <!--Texte de la légende-->
+                    <span> - Les salles d'APP</span>
+                </div> 
+                <div class = legend>
+                    <div id="legende_info"></div>
+                    <span> - Les salles informatiques</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_info_libre"></div>
+                    <span> - Les salles informatiques en libre service</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_polybot"></div>
+                    <span> - Polybot</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_bureaux"></div>
+                    <span> - Bureaux / Administration</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_elec"></div>
+                    <span> - Les salles d'électricité</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_decloi"></div>
+                    <span> - La salle décloisonnée</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_td"></div>
+                    <span> - Les salles de cours</span>
+                </div>
             </div>
 
             <p>Clique sur une salle pour voir sa description</p>
+<!--
+            <div class = "description" id = "desc_C202"><p>Voici la salle d'APP volets ! C'est également une salle d'automatisation, mais un groupe d'APP s'en sert pour mettre en oeuvre leur projet.</p></div>
+-->
 
         </div>
 
     </div>
 
-    <a href="../../index.html"><input type="button" value="acceuil"></a>
+   
 
 
 </body>
