@@ -24,79 +24,42 @@
 
 .APP{
     position : relative;
-    /*background-color: red;*/
-    /*opacity : 0.7;*/
-}
-.btn_APP{
-    display: block;
-    background: red;
-    opacity: 0.7;
+    background-color: red;
 }
 
 .info{
     position : relative;
-    /*background-color: blue;
-    opacity : 0.7;*/
+    background-color: blue;
 }
-.btn_info{
-    display: block;
-    background: blue;
-    opacity: 0.7;
-}
+
 
 .info_libre{
     position : relative;
-}
-.btn_info_libre{
-    display: block;
-    background-color: turquoise;
-    opacity: 0.7;
+    background-color: green;
 }
 
 .polybot{
     position : relative;
-}
-.btn_polybot{
-    display:block;
-    background-color: rgb(224, 70, 96);
-    opacity: 0.7;
-}
-
-.bureaux{
-    position : relative;
-}
-.btn_bureaux{
-    display: block;
-    background-color: green;
-    opacity: 0.7;
+    background-color: pink;
 }
 
 .elec{
     position : relative;
-}
-.btn_elec{
-    display: block;
     background-color: orange;
-    opacity: 0.7;
 }
+
 
 .decloi{
     position : relative;
-}
-.btn_decloi{
-    display: block;
     background-color: purple;
-    opacity: 0.7;
 }
+
 
 .TD{
     position : relative;
-}
-.btn_TD{
-    display: block;
     background-color: violet;
-    opacity: 0.7;
 }
+
 
 /** ---------------------------------------------------------------------------------- **/
 /** -- FIN DU STYLE DES BOUTONS DÉFINISSANT LE DIFFÉRENTES ZONES CLIQUABLES DU PLAN -- **/
@@ -111,247 +74,96 @@
 
 /*Position et taille de la division contenant le bouton*/
 #C202{ top: 164px; left: 202px; width: 66px; height: 50px;}
-/*Désactivation de l'affichage de la checkbox*/
 #btn_C202{
-    display: none;
+    width: 66px; height: 50px; 
 }
-/*Taille du bouton*/
-#btn_C202 + label{
-    width: 66px; height: 50px;
-}
-/*Action une fois le bouton activé : apparition d'une frontière et opacité augmentée*/
-#btn_C202:checked + label{
-    border:solid black 1px;
-    opacity:1;
-    
-}
+
 
 #A205{ top: 287px; left: 513px; width: 25px; height: 40px; }
 #btn_A205{
-    display: none;
-}
-#btn_A205 + label{
     width: 25px; height: 40px;
 }
-#btn_A205:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
+
 
 #A217{ top: 300px; left: 440px; width: 53px; height: 30px;}
 #btn_A217{
-    display: none;
-}
-#btn_A217 + label{
     width: 53px; height: 30px;
 }
-#btn_A217:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
+
 
 #C213{ bottom: 20px; left: 315px; width: 56px; height: 50px; }
 #btn_C213{
-    display: none;
+    width: 56px; height: 50px;
 }
-#btn_C213 + label{
-    width: 56px; height: 50px; 
-}
-#btn_C213:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
+
 
 #C214{ bottom: 70px; left: 375px; width: 56px; height: 50px; }
 #btn_C214{
-    display: none;
+    width: 56px; height: 50px;
 }
-#btn_C214 + label{
-    width: 56px; height: 50px; 
-}
-#btn_C214:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
+
 
 #C215{ bottom: 120px; left: 437px; width: 56px; height: 50px; }
 #btn_C215{
-    display: none;
+    width: 56px; height: 50px;
 }
-#btn_C215 + label{
-    width: 56px; height: 50px; 
-}
-#btn_C215:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
+
 
 #C216{ bottom: 103px; left: 435px; width: 58px; height: 50px; }
 #btn_C216{
-    display: none;
+    width: 58px; height: 50px;
 }
-#btn_C216 + label{
-    width: 58px; height: 50px; 
-}
-#btn_C216:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
+
 
 #C217{ bottom: 154px; left: 394px; width: 37px; height: 50px; }
 #btn_C217{
-    display: none;
+    width: 37px; height: 50px;
 }
-#btn_C217 + label{
-    width: 37px; height: 50px; 
-}
-#btn_C217:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
+
 
 #C209{ bottom: 272px; left: 201px; width: 35px; height: 50px; }
 #btn_C209{
-    display: none;
+    width: 35px; height: 50px;
 }
-#btn_C209 + label{
-    width: 35px; height: 50px; 
-}
-#btn_C209:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
+
 
 #C210{ bottom: 322px; left: 237px; width: 32px; height: 50px; }
 #btn_C210{
-    display: none;
+    width: 32px; height: 50px;
 }
-#btn_C210 + label{
-    width: 32px; height: 50px; 
-}
-#btn_C210:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
+
 
 #B205{ bottom: 137px; left: 271px; width: 32px; height: 40px; }
 #btn_B205{
-    display: none;
-}
-#btn_B205 + label{
-    width: 32px; height: 40px; 
-}
-#btn_B205:checked + label{
-    border:solid black 1px;
-    opacity:1;
+    width: 32px; height: 40px;
 }
 
-#A206{ bottom: 118px; left: 511px; width: 25px; height: 182px; }
-#btn_A206{
-    display: none;
-}
-#btn_A206 + label{
-    width: 25px; height: 182px; 
-}
-#btn_A206:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
 
-#A212{ bottom: 268px; left: 475px; width: 36px; height: 147px; }
-#btn_A212{
-    display: none;
-}
-#btn_A212 + label{
-    width: 36px; height: 147px; 
-}
-#btn_A212:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
-
-#A202{ bottom: 503px; left: 340px; width: 76px; height: 36px; }
+#A202{ bottom: 175px; left: 340px; width: 76px; height: 36px; }
 #btn_A202{
-    display: none;
-}
-#btn_A202 + label{
-    width: 76px; height: 36px; 
-}
-#btn_A202:checked + label{
-    border:solid black 1px;
-    opacity:1;
+    width: 76px; height: 36px;
 }
 
-#A221{ bottom: 453px; left: 351px; width: 62px; height: 149px; }
-#btn_A221{
-    display: none;
-}
-#btn_A221 + label{
-    width: 62px; height: 149px; 
-}
-#btn_A221:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
 
-#C206{ bottom: 928px; left: 65px; width: 96px; height: 52px; }
+#C206{ bottom: 450px; left: 65px; width: 96px; height: 52px; }
 #btn_C206{
-    display: none;
-}
-#btn_C206 + label{
-    width: 96px; height: 52px; 
-}
-#btn_C206:checked + label{
-    border:solid black 1px;
-    opacity:1;
+    width: 96px; height: 52px;
 }
 
-#B202{ bottom: 857px; left: 305px; width: 30px; height: 97px; }
-#btn_B202{
-    display: none;
-}
-#btn_B202 + label{
-    width: 30px; height: 97px; 
-}
-#btn_B202:checked + label{
-    border:solid black 1px;
-    opacity:1;
-}
 
-#C208{ bottom: 1077px; left: 163px; width: 36px; height: 54px; }
+#C208{ bottom: 503px; left: 163px; width: 36px; height: 54px; }
 #btn_C208{
-    display: none;
-}
-#btn_C208 + label{
-    width: 36px; height: 54px; 
-}
-#btn_C208:checked + label{
-    border:solid black 1px;
-    opacity:1;
+    width: 36px; height: 54px;
 }
 
-#C203{ bottom: 1065px; left: 63px; width: 136px; height: 54px; }
+#C203{ bottom: 490px; left: 63px; width: 136px; height: 54px; }
 #btn_C203{
-    display: none;
-}
-#btn_C203 + label{
-    width: 136px; height: 54px; 
-}
-#btn_C203:checked + label{
-    border:solid black 1px;
-    opacity:1;
+    width: 136px; height: 54px;
 }
 
-#A203{ bottom: 946px; left: 420px; width: 90px; height: 40px; }
+#A203{ bottom: 370px; left: 420px; width: 90px; height: 40px; }
 #btn_A203{
-    display: none;
-}
-#btn_A203 + label{
     width: 90px; height: 40px; 
-}
-#btn_A203:checked + label{
-    border:solid black 1px;
-    opacity:1;
 }
 
 /** ----------------------------------------- **/
@@ -398,7 +210,7 @@
     margin-right: 2px;
 }
 #legende_info_libre{
-    background-color: lightblue;
+    background-color: turquoise;
     width: 20px;
     height: 15px;
     border : solid 1px black;
@@ -412,7 +224,7 @@
     margin-right: 2px;
 }
 #legende_bureaux{
-    background-color: green;
+    background-color: white;
     width: 20px;
     height: 15px;
     border : solid 1px black;
@@ -448,10 +260,13 @@
 
 
 
-/** ------------------------------------- **/
+/** ------------------en cours------------------- **/
 /** -- STYLE DE LA PARTIE EXPLICATIONS -- **/
-/** ------------------------------------- **/
+/** -------------------en cours------------------ **/
 
+.description{
+    display : none;
+}
 
 
 /** -----------------en cours--------------------------- **/
