@@ -24,40 +24,77 @@
 
 .APP{
     position : relative;
+}
+.btn_APP{
     background-color: red;
+    border-radius: 7px;
+    opacity: 0.7;    
 }
 
 .info{
     position : relative;
+}
+.btn_info{
     background-color: blue;
+    border-radius: 7px;
+    opacity: 0.7;    
 }
 
 
 .info_libre{
     position : relative;
+}
+.btn_info_libre{
     background-color: green;
+    border-radius: 7px; 
+    opacity: 0.7;   
 }
 
 .polybot{
     position : relative;
+}
+.btn_polybot{
     background-color: pink;
+    border-radius: 7px;
+    opacity: 0.7;
 }
 
 .elec{
     position : relative;
+}
+.btn_elec{
     background-color: orange;
+    border-radius: 7px;
+    opacity: 0.7;
 }
 
 
 .decloi{
     position : relative;
+}
+.btn_decloi{
     background-color: purple;
+    border-radius: 7px;
+    opacity: 0.7;
 }
 
 
 .TD{
     position : relative;
+}
+.btn_TD{
     background-color: violet;
+    border-radius: 7px;
+    opacity: 0.7;
+}
+
+.toilettes{
+    position: relative;
+}
+.btn_toilettes{
+    background-color: black;
+    border-radius: 7px;
+    opacity: 0.7;
 }
 
 
@@ -73,9 +110,9 @@
 
 
 /*Position et taille de la division contenant le bouton*/
-#C202{ top: 164px; left: 202px; width: 66px; height: 50px;}
+#C202{ top: 162px; left: 199px; width: 66px; height: 50px;}
 #btn_C202{
-    width: 66px; height: 50px; 
+    width: 71px; height: 56px; 
 }
 
 
@@ -166,6 +203,13 @@
     width: 90px; height: 40px; 
 }
 
+.toilettes{
+    bottom: 650px; left: 290px; width: 30px; height: 400px;
+}
+.btn_toilettes{
+    width: 20px; height: 54px;
+}
+
 /** ----------------------------------------- **/
 /** -- FIN DU STYLE ET ACTIONS DES BOUTONS -- **/
 /** ----------------------------------------- **/
@@ -246,6 +290,13 @@
 }
 #legende_td{
     background-color: violet;
+    width: 20px;
+    height: 15px;
+    border : solid 1px black;
+    margin-right: 2px;
+}
+#legende_toilettes{
+    background-color: black;
     width: 20px;
     height: 15px;
     border : solid 1px black;
