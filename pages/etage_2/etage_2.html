@@ -23,6 +23,7 @@
 
             <!--Division contenant le bouton de la salle C202-->
             <div class="APP" id = "C202">
+                <!-- Bouton de la zone permettant d'en afficher le contenu -->
                 <button class = "btn_APP" id = "btn_C202" onclick="C202()" ></button>
             </div>
             
@@ -140,26 +141,81 @@
                 </div>
             </div>
 
-            <p>Clique sur une salle pour voir sa description</p>
+            <p>Clique sur une salle pour voir sa description !</p>
 
+            <!-- Division contenant l'affichage des diférentes descriptions de salles -->
             <div class = "descriptions">
-                <div class = "description" id = "desc_C202"><p>Voici la salle d'APP volets ! C'est également une salle d'automatisation, mais un groupe d'APP s'en sert pour mettre en oeuvre leur projet.</p></div>
-                <div class = "description" id = "desc_A205"><p>Voici la salle d'APP SCARR ! </p></div>
-                <div class = "description" id = "desc_A217"><p>Voici la salle d'APP Robots (nous lol) ! </p></div>
-                <div class = "description" id = "desc_C213"><p>Voici la salle C213 </p></div>
-                <div class = "description" id = "desc_C214"><p>Voici la salle C214 </p></div>
-                <div class = "description" id = "desc_C215"><p>Voici la salle C215 </p></div>
-                <div class = "description" id = "desc_C216"><p>Voici la salle C216 </p></div>
-                <div class = "description" id = "desc_C217"><p>Voici la salle C217 </p></div>
-                <div class = "description" id = "desc_C209"><p>Voici la salle C209 </p></div>
-                <div class = "description" id = "desc_C210"><p>Voici la salle C210 </p></div>
-                <div class = "description" id = "desc_B205"><p>Voici Polybot ! </p></div>
-                <div class = "description" id = "desc_A202"><p>Voici la salle A202 </p></div>
-                <div class = "description" id = "desc_C206"><p>Voici la salle C206 </p></div>
-                <div class = "description" id = "desc_C208"><p>Voici la salle C208 </p></div>
-                <div class = "description" id = "desc_C203"><p>Voici la salle C203 </p></div>
-                <div class = "description" id = "desc_A203"><p>Voici la salle A203 </p></div>
-                <div class = "description" id = "desc_toilettes"><p>Les toilettes, c'est pas ici !</p></div>
+                <!-- Division contenant la description de la salle C202 -->
+                <div class = "description" id = "desc_C202">
+                    <!-- Description de la salle -->
+                    <p>Voici la salle d'APP volets ! C'est également une salle d'automatisation, mais un groupe d'APP s'en sert pour mettre en oeuvre leur projet.</p>
+                    <!-- Bouton pour se rendre à la salle C202 -->
+                    <button class = "GO" id = "go_C202" onclick="go_C202()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_A205">
+                    <p>Voici la salle d'APP SCARR !</p>
+                    <button class = "GO" id = "go_A205" onclick="go_A205()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_A217">
+                    <p>Voici la salle d'APP Robots (nous lol) ! </p>
+                    <button class = "GO" id = "go_A217" onclick="go_A217()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C213">
+                    <p>Voici la salle C213 </p>
+                    <button class = "GO" id = "go_C213" onclick="go_C213()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C214">
+                    <p>Voici la salle C214 </p>
+                    <button class = "GO" id = "go_C214" onclick="go_C214()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C215">
+                    <p>Voici la salle C215 </p>
+                    <button class = "GO" id = "go_C215" onclick="go_C215()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C216">
+                    <p>Voici la salle C216 </p>
+                    <button class = "GO" id = "go_C216" onclick="go_C216()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C217">
+                    <p>Voici la salle C217 </p>
+                    <button class = "GO" id = "go_C217" onclick="go_C217()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C209">
+                    <p>Voici la salle C209 </p>
+                    <button class = "GO" id = "go_C209" onclick="go_C209()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C210">
+                    <p>Voici la salle C210 </p>
+                    <button class = "GO" id = "go_C210" onclick="go_C210()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_B205">
+                    <p>Voici Polybot ! </p>
+                    <button class = "GO" id = "go_B205" onclick="go_B205()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_A202">
+                    <p>Voici la salle A202 </p>
+                    <button class = "GO" id = "go_A202" onclick="go_A202()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C206">
+                    <p>Voici la salle C206 </p>
+                    <button class = "GO" id = "go_C206" onclick="go_C206()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C208">
+                    <p>Voici la salle C208 </p>
+                    <button class = "GO" id = "go_C208" onclick="go_C208()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C203">
+                    <p>Voici la salle C203 </p>
+                    <button class = "GO" id = "go_C203" onclick="go_C203()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_A203">
+                    <p>Voici la salle A203 </p>
+                    <button class = "GO" id = "go_A203" onclick="go_A203()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_toilettes">
+                    <p>Les toilettes, c'est pas ici !</p>
+                    <button class = "GO" id = "go_toilettes" onclick="go_toilettes()"> Je veux faire pipi ! </button>
+                </div>
             </div>
 
         </div>
@@ -168,7 +224,11 @@
 
    
     <script>
+        /* AFFICHAGE DES DESCRIPTIONS DES SALLES LORS D'UN APPUI SUR LE BOUTON */
+
+        /* Fonction déclenchée lors de l'appui sur le bouton de la salle C202 */
         function C202(){
+            /* Affichage de la description de la salle C202 uniquement */
             document.getElementById("desc_C202").style.display = "block";
             document.getElementById("desc_A205").style.display = "none";
             document.getElementById("desc_A217").style.display = "none";
@@ -187,6 +247,7 @@
             document.getElementById("desc_A203").style.display = "none";
             document.getElementById("desc_toilettes").style.display = "none";
 
+            /* Stylisation du bouton actif uniquement */
             document.getElementById("btn_C202").style.border = "solid black 2px";
             document.getElementById("C202").style.opacity = "1";
             document.getElementById("btn_A205").style.border = "solid black 1px";
@@ -1105,6 +1166,25 @@
             document.getElementsByClassName("btn_toilettes").style.opacity = "1";
 
         }
+
+        /* A FAIRE : APPUI SUR LE BOUTON Y ALLER D'UNE SALLE */
+        function go_A202(){}
+        function go_A203(){}
+        function go_A205(){}
+        function go_A217(){}
+        function go_B205(){}
+        function go_C202(){}
+        function go_C203(){}
+        function go_C206(){}
+        function go_C208(){}
+        function go_C209(){}
+        function go_C210(){}
+        function go_C213(){}
+        function go_C214(){}
+        function go_C215(){}
+        function go_C216(){}
+        function go_C217(){}
+        function go_toilettes(){}
 
  </script>
 
