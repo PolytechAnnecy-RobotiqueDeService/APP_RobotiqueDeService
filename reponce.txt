@@ -1,0 +1,71 @@
+math; mathematique; programation
+Voulez vous aller a la salle de mathematique ?
+
+info; informatique
+Voulez vous aller a la salle d'informatique ?
+
+electriciter; elec; electronique
+Voulez vous aller a la salle d'electronique ?
+
+auto; automatisation
+Voulez vous aller a la salle de automatisation ?
+
+materieaux
+Voulez vous aller a la salle de materieaux ?
+
+mecanique; meca
+Voulez vous aller a la salle de mecanique ?
+
+optique
+Voulez vous aller a la salle de optique ?
+
+mecatronique
+Voulez vous aller a la salle maison de la mecatronique ?
+
+projet
+Voulez vous aller a la salle de projet ou j'ai ete developer ?
+
+thermo; thermodynamique
+Voulez vous aller a la salle de thermodynamique ?
+
+TP; travaux; pratique
+Voulez vous aller a la salle de traveaux pratique
+
+mm
+La formation M M est  construite sur la base d’un socle commun sur les deux premiers semestres permettant d’acquérir une formation généraliste en mécanique. Elle se poursuit par deux parcours : Matériaux Composites : cette formation vise la maîtrise de la conception, de l’élaboration, du calcul et du contrôle de structures composites. L’objectif est d’acquérir de solides bases théoriques, la maîtrise des matières premières, de leurs propriétés et des procédés de transformation associés et de développer les aptitudes à l’intuition, à l’esprit critique et le goût de l’innovation. Mécanique Mécatronique : cette formation repose sur une approche globale depuis la conception jusqu’à la fabrication des systèmes mécaniques qui intègrent l’électronique de mesure, de puissance et la commande pour constituer des systèmes dits mécatroniques. L’ingénieur aborde ces systèmes dans leur ensemble avec des capacités d’analyse plus prononcées dans le domaine de la mécanique. La professionnalisation et l’ouverture internationale sont acquises via les stages en entreprise (découverte du milieu professionnel, assistant ingénieur et ingénieur), le projet R&D, et la mobilité à l’international.
+
+sni
+La formation permet d’acquérir les compétences généralistes en sciences pour l’ingénieur, complétées par des enseignements professionnalisant orientés selon trois grands domaines : les équipements électroniques intelligents, l’ingénierie et l’informatique. Les élèves-ingénieurs personnalisent leur parcours avec l’apprentissage par projets. Il permet de travailler sur le développement de l’autonomie, le travail en équipe, l’acquisition de nouvelles compétences et la mise en application des savoirs dans un contexte professionnel. Les projets s’appuient sur des thématiques d’avenir : Gestion des énergies renouvelables Imagerie pour l’environnement Véhicules Robotique de service Bâtiment intelligent Santé La professionnalisation et l’ouverture internationale sont acquises via les stages en entreprise (découverte du milieu professionnel, assistant ingénieur et ingénieur), le projet R&D, et la mobilité à l’international.
+
+idu
+La formation I D U permet d’acquérir des compétences pour gérer des projets informatiques et mener à bien des missions pluridisciplinaires et transversales dans des secteurs d’activités variés. L’organisation pédagogique repose sur : un socle de connaissances en sciences fondamentales, langues vivantes et sciences humaines et sociales, des enseignements de spécialité orientés sur les mathématiques, la conception des systèmes informatiques, la science des données, les technologies et SHES spécifiques aux métiers de la donnée, des enseignements d’approfondissement dans les disciplines de la spécialité, de nombreux projets. La dimension métier est apportée par l’intervention de professionnels dans la formation et l’accompagnement des élèves au travers des projets. Elle se concrétise en dernière année par une formation en alternance dans le cadre d’un contrat de professionnalisation ou par une mobilité à l’international. La professionnalisation et l’ouverture internationale sont acquises via les stages en entreprise (découverte du milieu professionnel, assistant ingénieur et ingénieur), le projet R&D, et la mobilité à l’international.
+
+polytech
+Polytech Annecy-Chambéry, l'école d'ingénieurs de l'Université Savoie Mont Blanc, fait partie du Réseau Polytech. Une double garantie pour les élèves qui bénéficient d'enseignements adossés à une recherche universitaire et d'un diplôme portant la marque "Polytech".
+
+peip
+Un enseignement dans un pacours de Licence Une formation dans une école à taille humaine, avec des groupes de travaux pratiques n’excédant pas 15 élèves Des enseignements spécfiques Polytech, un accompagnement individuel et une ouverture sur le monde industriel Un accès direct et de droit à une école du réseau Polytech pour les élèves ayant validé les deux années de PeiP
+
+ascenseur
+L'ascenseur est sur ma droite.
+
+escalier
+il y a 2 escalier, un derrier moi et l'autre sur ma gauche.
+
+visite
+La visite est fais par mon colegue pepper, je previendrais quand il sera de retours pour le prochain depart.
+
+pepper
+pepper est mon acolite, il a ete programer pour faire la viste de l'ecole.
+
+nao
+nao, c'est moi, je suis un petit robot qui fais l'acceuil de la journer porte ouvert.
+
+toilette
+les toilettes sont a ma gauche.
+
+c210
+
+
+
+
