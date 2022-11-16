@@ -1,0 +1,2 @@
+salut, j'arrive a lire un fichiet en point T X T.
+J'arrive meme a lire plusieur ligne.
