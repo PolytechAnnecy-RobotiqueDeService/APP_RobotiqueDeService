@@ -1,0 +1,1195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+
+<head>
+	<link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="etage_1.css">
+	<meta charset = "utf-8">
+	<title>Premier étage</title>
+</head>
+
+<header>
+    <a href="../../index.html"><input type="button" value="accueil"></a>
+</header>
+
+<body>
+    <h1>Premier étage</h1>
+
+    <!--Division contenant toutes les parties propre à la page-->
+    <div class ="contenu">
+
+        <!--Division contenant le plan ainsi que toutes les différentes zones cliquables dudit plan-->
+        <div class="plan">
+
+            <!--Division contenant le bouton de la salle C202-->
+            <div class="APP" id = "C202">
+                <!-- Bouton de la zone permettant d'en afficher le contenu -->
+                <button class = "btn_APP" id = "btn_C202" onclick="C202()" ></button>
+            </div>
+            
+            <div class = "APP" id = "A205">
+                <button class = "btn_APP" id = "btn_A205" onclick="A205()"></button>
+            </div>
+
+            <div class = "APP" id = "A217">
+                <button class = "btn_APP" id = "btn_A217" onclick="A217()"></button>
+            </div>
+
+            <div class = "info" id = "C213">
+                <button class = "btn_info" id = "btn_C213" onclick="C213()"></button>
+            </div>
+
+            <div class = "info" id = "C214">
+                <button class = "btn_info" id = "btn_C214" onclick="C214()"></button>
+            </div>
+
+            <div class = "info" id = "C215">
+                <button class = "btn_info" id = "btn_C215" onclick="C215()"></button>
+            </div>
+
+            <div class = "info" id = "C216">
+                <button class = "btn_info" id = "btn_C216" onclick="C216()"></button>
+            </div>
+
+            <div class = "info" id = "C217">
+                <button class = "btn_info" id = "btn_C217" onclick="C217()"></button>
+            </div>
+
+            <div class = "info_libre" id = "C209">
+                <button class = "btn_info_libre" id = "btn_C209" onclick="C209()"></button>
+            </div>
+
+            <div class = "info_libre" id = "C210">
+                <button class = "btn_info_libre" id = "btn_C210" onclick="C210()"></button>
+            </div>
+
+            <div class = "polybot" id = "B205">
+                <button class = "btn_polybot" id = "btn_B205" onclick="B205()"></button>
+            </div>
+
+            <div class = "elec" id = "A202">
+                <button class = "btn_elec" id = "btn_A202" onclick="A202()"></button>
+            </div>
+
+            <div class = "decloi" id = "C206">
+                <button class = "btn_decloi" id = "btn_C206" onclick="C206()"></button>
+            </div>
+
+            <div class = "info_libre" id = "C208">
+                <button class = "btn_info_libre" id = "btn_C208" onclick="C208()"></button>
+            </div>
+
+            <div class = "TD" id = "C203">
+                <button class = "btn_TD" id = "btn_C203" onclick="C203()"></button>
+            </div>
+
+            <div class = "TD" id = "A203">
+                <button class = "btn_TD" id = "btn_A203" onclick="A203()"></button>
+            </div>
+
+            <div class = "toilettes">
+                <button class = "btn_toilettes" onclick="toilettes()"></button>
+            </div>
+
+        </div>
+
+        <!--Division contenant la légende et les descriptions des salles-->
+        <div class ="details">
+
+            <!--Division contenant les légendes des différentes zones cliquables du plan-->
+            <div class = "legende">
+                <h2>Légendes</h2>
+
+                <!--Division contenant la première légende-->
+                <div class = legend>
+                    <!--Division permettant de créer le carré de couleur pour la légende-->
+                    <div id="legende_app"></div>
+                    <!--Texte de la légende-->
+                    <span> - Les salles d'APP</span>
+                </div> 
+                <div class = legend>
+                    <div id="legende_info"></div>
+                    <span> - Les salles informatiques</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_info_libre"></div>
+                    <span> - Les salles informatiques en libre service</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_polybot"></div>
+                    <span> - Polybot</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_bureaux"></div>
+                    <span> - Bureaux / Administration / Locaux personnel</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_elec"></div>
+                    <span> - Les salles d'électricité</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_decloi"></div>
+                    <span> - La salle décloisonnée</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_td"></div>
+                    <span> - Les salles de cours</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_toilettes"></div>
+                    <span> - Les toilettes</span>
+                </div>
+            </div>
+
+            <p>Clique sur une salle pour voir sa description !</p>
+
+            <!-- Division contenant l'affichage des diférentes descriptions de salles -->
+            <div class = "descriptions">
+                <!-- Division contenant la description de la salle C202 -->
+                <div class = "description" id = "desc_C202">
+                    <!-- Description de la salle -->
+                    <p>Voici la salle d'APP volets ! C'est également une salle d'automatisation, mais un groupe d'APP s'en sert pour mettre en oeuvre leur projet.</p>
+                    <!-- Bouton pour se rendre à la salle C202 -->
+                    <button class = "GO" id = "go_C202" onclick="go_C202()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_A205">
+                    <p>Voici la salle d'APP SCARR !</p>
+                    <button class = "GO" id = "go_A205" onclick="go_A205()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_A217">
+                    <p>Voici la salle d'APP Robots (nous lol) ! </p>
+                    <button class = "GO" id = "go_A217" onclick="go_A217()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C213">
+                    <p>Voici la salle C213 </p>
+                    <button class = "GO" id = "go_C213" onclick="go_C213()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C214">
+                    <p>Voici la salle C214 </p>
+                    <button class = "GO" id = "go_C214" onclick="go_C214()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C215">
+                    <p>Voici la salle C215 </p>
+                    <button class = "GO" id = "go_C215" onclick="go_C215()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C216">
+                    <p>Voici la salle C216 </p>
+                    <button class = "GO" id = "go_C216" onclick="go_C216()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C217">
+                    <p>Voici la salle C217 </p>
+                    <button class = "GO" id = "go_C217" onclick="go_C217()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C209">
+                    <p>Voici la salle C209 </p>
+                    <button class = "GO" id = "go_C209" onclick="go_C209()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C210">
+                    <p>Voici la salle C210 </p>
+                    <button class = "GO" id = "go_C210" onclick="go_C210()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_B205">
+                    <p>Voici Polybot ! </p>
+                    <button class = "GO" id = "go_B205" onclick="go_B205()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_A202">
+                    <p>Voici la salle A202 </p>
+                    <button class = "GO" id = "go_A202" onclick="go_A202()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C206">
+                    <p>Voici la salle C206 </p>
+                    <button class = "GO" id = "go_C206" onclick="go_C206()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C208">
+                    <p>Voici la salle C208 </p>
+                    <button class = "GO" id = "go_C208" onclick="go_C208()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_C203">
+                    <p>Voici la salle C203 </p>
+                    <button class = "GO" id = "go_C203" onclick="go_C203()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_A203">
+                    <p>Voici la salle A203 </p>
+                    <button class = "GO" id = "go_A203" onclick="go_A203()"> Y aller </button>
+                </div>
+                <div class = "description" id = "desc_toilettes">
+                    <p>Les toilettes, c'est pas ici !</p>
+                    <button class = "GO" id = "go_toilettes" onclick="go_toilettes()"> Je veux faire pipi ! </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+   
+    <script>
+        /* AFFICHAGE DES DESCRIPTIONS DES SALLES LORS D'UN APPUI SUR LE BOUTON */
+
+        /* Fonction déclenchée lors de l'appui sur le bouton de la salle C202 */
+        function C202(){
+            /* Affichage de la description de la salle C202 uniquement */
+            document.getElementById("desc_C202").style.display = "block";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            /* Stylisation du bouton actif uniquement */
+            document.getElementById("btn_C202").style.border = "solid black 2px";
+            document.getElementById("C202").style.opacity = "1";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function A205(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "block";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";            
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 2px";
+            document.getElementById("A205").style.opacity = "1";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+            
+        }
+
+        function A217(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "block";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 2px";
+            document.getElementById("A217").style.opacity = "1";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function C213(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "block";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 2px";
+            document.getElementById("C213").style.opacity = "1";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function C214(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "block";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 2px";
+            document.getElementById("C214").style.opacity = "1";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function C215(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "block";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 2px";
+            document.getElementById("C215").style.opacity = "1";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function C216(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "block";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 2px";
+            document.getElementById("C216").style.opacity = "1";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function C217(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "block";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 2px";
+            document.getElementById("C217").style.opacity = "1";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function C209(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "block";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 2px";
+            document.getElementById("C209").style.opacity = "1";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function C210(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "block";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 2px";
+            document.getElementById("C210").style.opacity = "1";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function B205(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "block";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 2px";
+            document.getElementById("B205").style.opacity = "1";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function A202(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "block";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 2px";
+            document.getElementById("A202").style.opacity = "1";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function C206(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "block";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 2px";
+            document.getElementById("C206").style.opacity = "1";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function C208(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "block";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 2px";
+            document.getElementById("C208").style.opacity = "1";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function C203(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "block";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "1";
+            document.getElementById("btn_A203").style.border = "solid black 2px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+        }
+
+        function A203(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "block";
+            document.getElementById("desc_toilettes").style.display = "none";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 2px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "1";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 1px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "0.7";
+
+        }
+ 
+        function toilettes(){
+            document.getElementById("desc_C202").style.display = "none";
+            document.getElementById("desc_A205").style.display = "none";
+            document.getElementById("desc_A217").style.display = "none";
+            document.getElementById("desc_C213").style.display = "none";
+            document.getElementById("desc_C214").style.display = "none";
+            document.getElementById("desc_C215").style.display = "none";
+            document.getElementById("desc_C216").style.display = "none";
+            document.getElementById("desc_C217").style.display = "none";
+            document.getElementById("desc_C209").style.display = "none";
+            document.getElementById("desc_C210").style.display = "none";
+            document.getElementById("desc_B205").style.display = "none";
+            document.getElementById("desc_A202").style.display = "none";
+            document.getElementById("desc_C206").style.display = "none";
+            document.getElementById("desc_C208").style.display = "none";
+            document.getElementById("desc_C203").style.display = "none";
+            document.getElementById("desc_A203").style.display = "none";
+            document.getElementById("desc_toilettes").style.display = "block";
+
+            document.getElementById("btn_C202").style.border = "solid black 1px";
+            document.getElementById("C202").style.opacity = "0.7";
+            document.getElementById("btn_A205").style.border = "solid black 1px";
+            document.getElementById("A205").style.opacity = "0.7";
+            document.getElementById("btn_A217").style.border = "solid black 1px";
+            document.getElementById("A217").style.opacity = "0.7";
+            document.getElementById("btn_C213").style.border = "solid black 1px";
+            document.getElementById("C213").style.opacity = "0.7";
+            document.getElementById("btn_C214").style.border = "solid black 1px";
+            document.getElementById("C214").style.opacity = "0.7";
+            document.getElementById("btn_C215").style.border = "solid black 1px";
+            document.getElementById("C215").style.opacity = "0.7";
+            document.getElementById("btn_C216").style.border = "solid black 1px";
+            document.getElementById("C216").style.opacity = "0.7";
+            document.getElementById("btn_C217").style.border = "solid black 1px";
+            document.getElementById("C217").style.opacity = "0.7";
+            document.getElementById("btn_C209").style.border = "solid black 1px";
+            document.getElementById("C209").style.opacity = "0.7";
+            document.getElementById("btn_C210").style.border = "solid black 1px";
+            document.getElementById("C210").style.opacity = "0.7";
+            document.getElementById("btn_B205").style.border = "solid black 1px";
+            document.getElementById("B205").style.opacity = "0.7";
+            document.getElementById("btn_A202").style.border = "solid black 1px";
+            document.getElementById("A202").style.opacity = "0.7";
+            document.getElementById("btn_C206").style.border = "solid black 1px";
+            document.getElementById("C206").style.opacity = "0.7";
+            document.getElementById("btn_C208").style.border = "solid black 1px";
+            document.getElementById("C208").style.opacity = "0.7";
+            document.getElementById("btn_C203").style.border = "solid black 1px";
+            document.getElementById("C203").style.opacity = "0.7";
+            document.getElementById("btn_A203").style.border = "solid black 1px";
+            document.getElementById("A203").style.opacity = "0.7";
+            document.getElementsByClassName("btn_toilettes").style.border = "solid black 2px";
+            document.getElementsByClassName("btn_toilettes").style.opacity = "1";
+
+        }
+
+        /* A FAIRE : APPUI SUR LE BOUTON Y ALLER D'UNE SALLE */
+        function go_A202(){}
+        function go_A203(){}
+        function go_A205(){}
+        function go_A217(){}
+        function go_B205(){}
+        function go_C202(){}
+        function go_C203(){}
+        function go_C206(){}
+        function go_C208(){}
+        function go_C209(){}
+        function go_C210(){}
+        function go_C213(){}
+        function go_C214(){}
+        function go_C215(){}
+        function go_C216(){}
+        function go_C217(){}
+        function go_toilettes(){}
+
+ </script>
+
+</body>
+
+
+</html>
+
