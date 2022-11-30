@@ -4,11 +4,6 @@
     <context>
         <name>behavior_1/behavior.xar:/Say</name>
         <message>
-            <source>Hello</source>
-            <comment>Text</comment>
-            <translation type="vanished">Hello</translation>
-        </message>
-        <message>
             <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Click</source>
             <comment>Text</comment>
