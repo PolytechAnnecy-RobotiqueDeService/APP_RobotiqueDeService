@@ -8,17 +8,15 @@
     <Resources>
         <File name="index" src="html/index.html" />
         <File name="yawn" src="behavior_1/behavior_1/yawn.mp3" />
-        <File name="README" src="html/pages/README.md" />
         <File name="etage_1" src="html/pages/etage_1/etage_1.css" />
         <File name="etage_1" src="html/pages/etage_1/etage_1.html" />
         <File name="etage_2" src="html/pages/etage_2/etage_2.css" />
         <File name="etage_2" src="html/pages/etage_2/etage_2.html" />
-        <File name="help" src="html/pages/help.html" />
         <File name="plan_etage_1" src="html/pages/images/plan_etage_1.png" />
         <File name="plan_etage_2" src="html/pages/images/plan_etage_2.png" />
         <File name="index" src="html/pages/index.css" />
-        <File name="ourT" src="html/pages/ourT.jpg" />
-        <File name="we" src="html/pages/we.html" />
+        <File name="home" src="html/pages/images/home.png" />
+        <File name="ourT" src="html/pages/images/ourT.jpg" />
     </Resources>
     <Topics />
     <IgnoredPaths />

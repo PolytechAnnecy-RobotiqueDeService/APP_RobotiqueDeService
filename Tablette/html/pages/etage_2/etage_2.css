@@ -113,102 +113,102 @@
 
 
 /*Position et taille de la division contenant le bouton*/
-#C202{ top: 162px; left: 199px; width: 66px; height: 50px;}
+#C202{ top: 73px; left: 141px; width: 66px; height: 50px;}
 /* taille du bouton dans la division */
 #btn_C202{
     width: 71px; height: 56px; 
 }
 
 
-#A205{ top: 285px; left: 510px; width: 25px; height: 40px; }
+#A205{ top: 197px; left: 453px; width: 25px; height: 40px; }
 #btn_A205{
     width: 28px; height: 41px;
 }
 
 
-#A217{ top: 299px; left: 437px; width: 53px; height: 30px;}
+#A217{ top: 212px; left: 380px; width: 53px; height: 30px;}
 #btn_A217{
     width: 57px; height: 31px;
 }
 
 
-#C213{ bottom: 24px; left: 313px; width: 56px; height: 50px; }
+#C213{ bottom: 111px; left: 255px; width: 56px; height: 50px; }
 #btn_C213{
     width: 61px; height: 55px;
 }
 
 
-#C214{ bottom: 74px; left: 373px; width: 56px; height: 50px; }
+#C214{ bottom: 161px; left: 315px; width: 56px; height: 50px; }
 #btn_C214{
     width: 61px; height: 55px;
 }
 
 
-#C215{ bottom: 123px; left: 433px; width: 56px; height: 50px; }
+#C215{ bottom: 211px; left: 375px; width: 56px; height: 50px; }
 #btn_C215{
     width: 61px; height: 55px;
 }
 
 
-#C216{ bottom: 107px; left: 431px; width: 58px; height: 50px; }
+#C216{ bottom: 195px; left: 373px; width: 58px; height: 50px; }
 #btn_C216{
     width: 63px; height: 56px;
 }
 
 
-#C217{ bottom: 157px; left: 391px; width: 37px; height: 50px; }
+#C217{ bottom: 245px; left: 333px; width: 37px; height: 50px; }
 #btn_C217{
     width: 42px; height: 56px;
 }
 
 
-#C209{ bottom: 275px; left: 199px; width: 35px; height: 50px; }
+#C209{ bottom: 365px; left: 139px; width: 35px; height: 50px; }
 #btn_C209{
     width: 37px; height: 55px;
 }
 
 
-#C210{ bottom: 325px; left: 234px; width: 32px; height: 50px; }
+#C210{ bottom: 415px; left: 174px; width: 32px; height: 50px; }
 #btn_C210{
     width: 36px; height: 55px;
 }
 
 
-#B205{ bottom: 137px; left: 271px; width: 32px; height: 40px; }
+#B205{ bottom: 224px; left: 212px; width: 32px; height: 40px; }
 #btn_B205{
     width: 32px; height: 40px;
 }
 
 
-#A202{ bottom: 177px; left: 337px; width: 78px; height: 36px; }
+#A202{ bottom: 265px; left: 278px; width: 78px; height: 36px; }
 #btn_A202{
     width: 82px; height: 42px;
 }
 
 
-#C206{ bottom: 452px; left: 63px; width: 96px; height: 52px; }
+#C206{ bottom: 540px; left: 5px; width: 96px; height: 52px; }
 #btn_C206{
     width: 99px; height: 55px;
 }
 
 
-#C208{ bottom: 503px; left: 161px; width: 36px; height: 54px; }
+#C208{ bottom: 592px; left: 101px; width: 36px; height: 54px; }
 #btn_C208{
     width: 39px; height: 55px;
 }
 
-#C203{ bottom: 490px; left: 63px; width: 136px; height: 54px; }
+#C203{ bottom: 578px; left: 5px; width: 136px; height: 54px; }
 #btn_C203{
     width: 136px; height: 54px;
 }
 
-#A203{ bottom: 372px; left: 418px; width: 90px; height: 40px; }
+#A203{ bottom: 460px; left: 360px; width: 90px; height: 40px; }
 #btn_A203{
     width: 93px; height: 41px; 
 }
 
 .toilettes{
-    bottom: 650px; left: 290px; width: 30px; height: 400px;
+    bottom: 737px; left: 235px; width: 30px; height: 400px;
 }
 .btn_toilettes{
     width: 20px; height: 54px;
