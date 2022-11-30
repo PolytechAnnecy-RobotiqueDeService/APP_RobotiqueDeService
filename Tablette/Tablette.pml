@@ -7,20 +7,21 @@
     <Dialogs />
     <Resources>
         <File name="index" src="html/index.html" />
-        <File name="truc" src="html/truc.html" />
-        <File name="truc.html" src="html/truc.html.BAK" />
-        <File name="robotutils" src="html/js/robotutils.js" />
-        <File name="bootstrap.min" src="html/js/bootstrap.min.js" />
-        <File name="bootstrap4" src="html/js/bootstrap4.js" />
-        <File name="jquery.min" src="html/js/jquery.min.js" />
-        <File name="main" src="html/js/main.js" />
-        <File name="translation" src="html/js/translation.js" />
         <File name="yawn" src="behavior_1/behavior_1/yawn.mp3" />
+        <File name="README" src="html/pages/README.md" />
+        <File name="etage_1" src="html/pages/etage_1/etage_1.css" />
+        <File name="etage_1" src="html/pages/etage_1/etage_1.html" />
+        <File name="etage_2" src="html/pages/etage_2/etage_2.css" />
+        <File name="etage_2" src="html/pages/etage_2/etage_2.html" />
+        <File name="help" src="html/pages/help.html" />
+        <File name="plan_etage_1" src="html/pages/images/plan_etage_1.png" />
+        <File name="plan_etage_2" src="html/pages/images/plan_etage_2.png" />
+        <File name="index" src="html/pages/index.css" />
+        <File name="ourT" src="html/pages/ourT.jpg" />
+        <File name="we" src="html/pages/we.html" />
     </Resources>
     <Topics />
-    <IgnoredPaths>
-        <Path src="html/index.html.BAK" />
-    </IgnoredPaths>
+    <IgnoredPaths />
     <Translations>
         <Translation name="translation_en_US" src="translations/translation_en_US.ts" language="en_US" />
     </Translations>

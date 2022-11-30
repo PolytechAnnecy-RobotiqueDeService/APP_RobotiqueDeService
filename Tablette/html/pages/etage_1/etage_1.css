@@ -5,6 +5,7 @@
 /* -- Style du contenu de manière générale -- */
 .contenu{
     display : flex;
+    flex-wrap: wrap;
     flex-direction : row;
     justify-content: space-around;
 }
@@ -12,8 +13,8 @@
 /* -- Définition du plan comme fond de la division plan -- */
 .plan{
     background-image: url("../images/plan_etage_1.png");
-    width : 600px;
-    height : 600px;
+    width : 493px;
+    height : 490px;
 }
 
 /** --------------------------------------------------------------------------- **/
@@ -228,7 +229,7 @@
 .details{
     display : flex; 
     flex-direction : column;
-    width : 600px;
+    width : 400px;
 }
 
 
