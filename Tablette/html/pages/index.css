@@ -1,5 +1,7 @@
 body{
-    background-color: red;
+    background-color: antiquewhite;
+    /*background-image: url("../pages/images/supertropclasse.png");*/
+    background-size: 100%;
 }
 
 h1{

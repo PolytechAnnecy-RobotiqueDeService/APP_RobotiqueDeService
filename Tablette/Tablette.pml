@@ -17,6 +17,10 @@
         <File name="index" src="html/pages/index.css" />
         <File name="home" src="html/pages/images/home.png" />
         <File name="ourT" src="html/pages/images/ourT.jpg" />
+        <File name="sabrelaser" src="html/pages/images/sabrelaser.png" />
+        <File name="sabreslasers" src="html/pages/images/sabreslasers.png" />
+        <File name="supertropclasse" src="html/pages/images/supertropclasse.png" />
+        <File name="supertropviolet" src="html/pages/images/supertropviolet.png" />
     </Resources>
     <Topics />
     <IgnoredPaths />

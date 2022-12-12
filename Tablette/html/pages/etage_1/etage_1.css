@@ -240,7 +240,7 @@ header{
     display : flex; 
     flex-direction : column;
     width : 400px;
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
     padding: 15px;
 }
 
