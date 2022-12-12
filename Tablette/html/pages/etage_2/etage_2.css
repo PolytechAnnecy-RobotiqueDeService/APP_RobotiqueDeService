@@ -3,11 +3,22 @@
 /*------------------------------------------*/
 
 /* -- Style du contenu de manière générale -- */
+header{
+    align-items: center;
+}
+.btn_accueil{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
 .contenu{
     display : flex;
     flex-wrap: wrap;
     flex-direction : row;
     justify-content: space-around;
+    background-color: antiquewhite;
 }
 
 /* -- Définition du plan comme fond de la division plan -- */

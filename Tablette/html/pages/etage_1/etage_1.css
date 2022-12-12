@@ -3,6 +3,16 @@
 /*------------------------------------------*/
 
 /* -- Style du contenu de manière générale -- */
+header{
+    align-items: center;
+}
+.btn_accueil{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
 .contenu{
     display : flex;
     flex-wrap: wrap;
@@ -12,7 +22,7 @@
 
 /* -- Définition du plan comme fond de la division plan -- */
 .plan{
-    background-image: url("../images/plan_etage_2.png");
+    background-image: url("../images/plan_etage_1.png");
     width : 493px;
     height : 490px;
 }
@@ -230,6 +240,8 @@
     display : flex; 
     flex-direction : column;
     width : 400px;
+    background-color: antiquewhite;
+    padding: 15px;
 }
 
 
