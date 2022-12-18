@@ -42,7 +42,7 @@ header{
 .btn_APP{
     background-color: #ff0b9d;
     border-radius: 7px;
-    opacity: 1;    
+    opacity: 0.7;    
 }
 
 .info{
@@ -51,7 +51,7 @@ header{
 .btn_info{
     background-color: #e8b600;
     border-radius: 7px;
-    opacity: 1;    
+    opacity: 0.7;    
 }
 
 .polybot{
@@ -60,7 +60,7 @@ header{
 .btn_polybot{
     background-color: grey;
     border-radius: 7px;
-    opacity: 1;
+    opacity: 0.7;
 }
 
 .elec{
@@ -69,7 +69,7 @@ header{
 .btn_elec{
     background-color: #ff9544;
     border-radius: 7px;
-    opacity: 1;
+    opacity: 0.7;
 }
 
 
@@ -79,7 +79,7 @@ header{
 .btn_decloi{
     background-color: #0b063c;
     border-radius: 7px;
-    opacity: 1;
+    opacity: 0.7;
 }
 
 
@@ -89,7 +89,7 @@ header{
 .btn_TD{
     background-color: #1f98a3;
     border-radius: 7px;
-    opacity: 1;
+    opacity: 0.7;
 }
 
 .toilettes{
@@ -98,7 +98,7 @@ header{
 .btn_toilettes{
     background-color: black;
     border-radius: 7px;
-    opacity: 1;
+    opacity: 0.7;
 }
 
 
