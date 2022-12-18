@@ -12,7 +12,6 @@ header{
     left: 0px;
 }
 
-
 .contenu{
     display : flex;
     flex-wrap: wrap;
@@ -34,69 +33,41 @@ header{
 /** --------------------------------------------------------------------------- **/
 
 /* position relative pour toutes les divisions de zones pour pouvoir les placer sur le plan */
-.APP{
-    position : relative;
-}
-/* styles des boutons par classe pour homogénéiser l'apparence */
-.btn_APP{
-    background-color: red;
-    border-radius: 7px;
-    opacity: 0.7;    
-}
-
-.info{
-    position : relative;
-}
-.btn_info{
-    background-color: blue;
-    border-radius: 7px;
-    opacity: 0.7;    
-}
 
 
-.info_libre{
+.sco{
     position : relative;
 }
-.btn_info_libre{
-    background-color: green;
-    border-radius: 7px; 
-    opacity: 0.7;   
-}
-
-.polybot{
-    position : relative;
-}
-.btn_polybot{
-    background-color: pink;
+.btn_sco{
+    background-color: grey;
     border-radius: 7px;
     opacity: 0.7;
 }
 
-.elec{
+.tp{
     position : relative;
 }
-.btn_elec{
-    background-color: orange;
+.btn_tp{
+    background-color: #ff9544;
+    border-radius: 7px;
+    opacity: 0.7;
+}
+
+.amphi{
+    position : relative;
+}
+.btn_amphi{
+    background-color: #0b063c;
     border-radius: 7px;
     opacity: 0.7;
 }
 
 
-.decloi{
+.td{
     position : relative;
 }
-.btn_decloi{
-    background-color: purple;
-    border-radius: 7px;
-    opacity: 0.7;
-}
-
-
-.TD{
-    position : relative;
-}
-.btn_TD{
-    background-color: violet;
+.btn_td{
+    background-color: #1f98a3;
     border-radius: 7px;
     opacity: 0.7;
 }
@@ -123,106 +94,66 @@ header{
 
 
 /*Position et taille de la division contenant le bouton*/
-#C202{ top: 73px; left: 141px; width: 66px; height: 50px;}
-/* taille du bouton dans la division */
-#btn_C202{
+#C102{ top: 73px; left: 140px; width: 66px; height: 50px;}
+#btn_C102{
     width: 71px; height: 56px; 
 }
 
-
-#A205{ top: 197px; left: 453px; width: 25px; height: 40px; }
-#btn_A205{
-    width: 28px; height: 41px;
+#C103{ top: 23px; left: 62px; width: 73px; height: 50px;}
+#btn_C103{
+    width: 78px; height: 56px; 
 }
 
-
-#A217{ top: 212px; left: 380px; width: 53px; height: 30px;}
-#btn_A217{
-    width: 57px; height: 31px;
+#C105{ bottom: 18px; left: 1px; width: 64px; height: 50px;}
+#btn_C105{
+    width: 64px; height: 47px; 
 }
 
-
-#C213{ bottom: 111px; left: 255px; width: 56px; height: 50px; }
-#btn_C213{
-    width: 61px; height: 55px;
+#C107{ bottom: 144px; left: 1px; width: 64px; height: 50px;}
+#btn_C107{
+    width: 212px; height: 56px; 
 }
 
-
-#C214{ bottom: 161px; left: 315px; width: 56px; height: 50px; }
-#btn_C214{
-    width: 61px; height: 55px;
+#toilettes{ bottom: 195px; left: 232px; width: 64px; height: 50px;}
+#btn_toilettes{
+    width: 22px; height: 58px; 
 }
 
-
-#C215{ bottom: 211px; left: 375px; width: 56px; height: 50px; }
-#btn_C215{
-    width: 61px; height: 55px;
+#C114{ bottom: 244px; left: 253px; width: 64px; height: 50px;}
+#btn_C114{
+    width: 62px; height: 56px; 
 }
 
-
-#C216{ bottom: 195px; left: 373px; width: 58px; height: 50px; }
-#btn_C216{
-    width: 63px; height: 56px;
+#C115{ bottom: 294px; left: 314px; width: 64px; height: 50px;}
+#btn_C115{
+    width: 43px; height: 56px; 
 }
 
-
-#C217{ bottom: 245px; left: 333px; width: 37px; height: 50px; }
-#btn_C217{
-    width: 42px; height: 56px;
+#C116{ bottom: 344px; left: 355px; width: 64px; height: 50px;}
+#btn_C116{
+    width: 84px; height: 56px; 
 }
 
-
-#C209{ bottom: 365px; left: 139px; width: 35px; height: 50px; }
-#btn_C209{
-    width: 37px; height: 55px;
+#C119{ bottom: 327px; left: 313px; width: 64px; height: 50px;}
+#btn_C119{
+    width: 146px; height: 57px; 
 }
 
-
-#C210{ bottom: 415px; left: 174px; width: 32px; height: 50px; }
-#btn_C210{
-    width: 36px; height: 55px;
+#B104{ bottom: 261px; left: 244px; width: 64px; height: 50px;}
+#btn_B104{
+    width: 35px; height: 55px; 
 }
 
-
-#B205{ bottom: 224px; left: 212px; width: 32px; height: 40px; }
-#btn_B205{
-    width: 32px; height: 40px;
+#B120{ bottom: 309px; left: 72px; width: 64px; height: 50px;}
+#btn_B120{
+    width: 100px; height: 75px; 
 }
 
-
-#A202{ bottom: 265px; left: 278px; width: 78px; height: 36px; }
-#btn_A202{
-    width: 82px; height: 42px;
+#sco{ bottom: 233px; left: 191px; width: 64px; height: 50px;}
+#btn_sco{
+    width: 43px; height: 63px; 
 }
 
-
-#C206{ bottom: 540px; left: 5px; width: 96px; height: 52px; }
-#btn_C206{
-    width: 99px; height: 55px;
-}
-
-
-#C208{ bottom: 592px; left: 101px; width: 36px; height: 54px; }
-#btn_C208{
-    width: 39px; height: 55px;
-}
-
-#C203{ bottom: 578px; left: 5px; width: 136px; height: 54px; }
-#btn_C203{
-    width: 136px; height: 54px;
-}
-
-#A203{ bottom: 460px; left: 360px; width: 90px; height: 40px; }
-#btn_A203{
-    width: 93px; height: 41px; 
-}
-
-.toilettes{
-    bottom: 737px; left: 235px; width: 30px; height: 400px;
-}
-.btn_toilettes{
-    width: 20px; height: 54px;
-}
 
 /** ----------------------------------------- **/
 /** -- FIN DU STYLE ET ACTIONS DES BOUTONS -- **/
@@ -255,29 +186,8 @@ header{
 
 /*RÉGLAGE DES CARRÉS DE COULEURS POUR LA LÉGENDE*/
 
-#legende_app{
-    background-color: red;
-    width : 20px;
-    height : 15px;
-    border : solid 1px black;
-    margin-right: 2px;
-}
-#legende_info{
-    background-color: blue;
-    width: 20px;
-    height: 15px;
-    border : solid 1px black;
-    margin-right: 2px;
-}
-#legende_info_libre{
-    background-color: turquoise;
-    width: 20px;
-    height: 15px;
-    border : solid 1px black;
-    margin-right: 2px;
-}
-#legende_polybot{
-    background-color: rgb(224, 70, 96);
+#legende_sco{
+    background-color: grey;
     width: 20px;
     height: 15px;
     border : solid 1px black;
@@ -290,22 +200,22 @@ header{
     border : solid 1px black;
     margin-right: 2px;
 }
-#legende_elec{
-    background-color: orange;
+#legende_tp{
+    background-color: #ff9544;
     width: 20px;
     height: 15px;
     border : solid 1px black;
     margin-right: 2px;
 }
-#legende_decloi{
-    background-color: purple;
+#legende_amphi{
+    background-color: #0b063c;
     width: 20px;
     height: 15px;
     border : solid 1px black;
     margin-right: 2px;
 }
 #legende_td{
-    background-color: violet;
+    background-color: #1f98a3;
     width: 20px;
     height: 15px;
     border : solid 1px black;

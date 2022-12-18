@@ -40,46 +40,36 @@ header{
 }
 /* styles des boutons par classe pour homogénéiser l'apparence */
 .btn_APP{
-    background-color: red;
+    background-color: #ff0b9d;
     border-radius: 7px;
-    opacity: 0.7;    
+    opacity: 1;    
 }
 
 .info{
     position : relative;
 }
 .btn_info{
-    background-color: blue;
+    background-color: #e8b600;
     border-radius: 7px;
-    opacity: 0.7;    
-}
-
-
-.info_libre{
-    position : relative;
-}
-.btn_info_libre{
-    background-color: green;
-    border-radius: 7px; 
-    opacity: 0.7;   
+    opacity: 1;    
 }
 
 .polybot{
     position : relative;
 }
 .btn_polybot{
-    background-color: pink;
+    background-color: grey;
     border-radius: 7px;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .elec{
     position : relative;
 }
 .btn_elec{
-    background-color: orange;
+    background-color: #ff9544;
     border-radius: 7px;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 
@@ -87,9 +77,9 @@ header{
     position : relative;
 }
 .btn_decloi{
-    background-color: purple;
+    background-color: #0b063c;
     border-radius: 7px;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 
@@ -97,9 +87,9 @@ header{
     position : relative;
 }
 .btn_TD{
-    background-color: violet;
+    background-color: #1f98a3;
     border-radius: 7px;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .toilettes{
@@ -108,7 +98,7 @@ header{
 .btn_toilettes{
     background-color: black;
     border-radius: 7px;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 
@@ -255,28 +245,21 @@ header{
 /*RÉGLAGE DES CARRÉS DE COULEURS POUR LA LÉGENDE*/
 
 #legende_app{
-    background-color: red;
+    background-color: #ff0b9d;
     width : 20px;
     height : 15px;
     border : solid 1px black;
     margin-right: 2px;
 }
 #legende_info{
-    background-color: blue;
-    width: 20px;
-    height: 15px;
-    border : solid 1px black;
-    margin-right: 2px;
-}
-#legende_info_libre{
-    background-color: green;
+    background-color: #e8b600;
     width: 20px;
     height: 15px;
     border : solid 1px black;
     margin-right: 2px;
 }
 #legende_polybot{
-    background-color: rgb(224, 70, 96);
+    background-color: grey;
     width: 20px;
     height: 15px;
     border : solid 1px black;
@@ -290,21 +273,21 @@ header{
     margin-right: 2px;
 }
 #legende_elec{
-    background-color: orange;
+    background-color: #ff9544;
     width: 20px;
     height: 15px;
     border : solid 1px black;
     margin-right: 2px;
 }
 #legende_decloi{
-    background-color: purple;
+    background-color: #0b063c;
     width: 20px;
     height: 15px;
     border : solid 1px black;
     margin-right: 2px;
 }
 #legende_td{
-    background-color: violet;
+    background-color: #1f98a3;
     width: 20px;
     height: 15px;
     border : solid 1px black;
