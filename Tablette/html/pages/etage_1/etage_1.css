@@ -57,7 +57,7 @@ header{
     position : relative;
 }
 .btn_amphi{
-    background-color: #0b063c;
+    background-color: violet;
     border-radius: 7px;
     opacity: 0.7;
 }
@@ -208,7 +208,7 @@ header{
     margin-right: 2px;
 }
 #legende_amphi{
-    background-color: #0b063c;
+    background-color: violet;
     width: 20px;
     height: 15px;
     border : solid 1px black;

@@ -77,7 +77,7 @@ header{
     position : relative;
 }
 .btn_decloi{
-    background-color: #0b063c;
+    background-color: purple;
     border-radius: 7px;
     opacity: 0.7;
 }
@@ -280,7 +280,7 @@ header{
     margin-right: 2px;
 }
 #legende_decloi{
-    background-color: #0b063c;
+    background-color: purple;
     width: 20px;
     height: 15px;
     border : solid 1px black;
