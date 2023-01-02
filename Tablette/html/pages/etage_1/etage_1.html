@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+
+<head>
+	<link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="etage_1.css">
+	<meta charset="utf-8">
+	<title>Premier étage</title>
+</head>
+
+<header>
+    <div class="btn_accueil">
+        <a href="../../index.html">
+            <input type="image" src="../images/home.png" width="50" height="50">
+        </a>
+    </div>
+    <h1>Premier étage</h1>
+</header>
+
+
+<body>
+    <!--Division contenant toutes les parties propre à la page-->
+    <div class ="contenu">
+
+        <!--Division contenant le plan ainsi que toutes les différentes zones cliquables dudit plan-->
+        <div class="plan">
+
+            <!--Division contenant le bouton de la salle C202-->
+            <div class="tp" id = "C102">
+                <!-- Bouton de la zone permettant d'en afficher le contenu -->
+                <button class = "btn_tp" id = "btn_C102" onclick="C102()" ></button>
+            </div>
+
+            <div class="td" id="C103">
+                <button class="btn_td" id="btn_C103" onclick="C103()"></button>
+            </div>
+
+            <div class="td" id="C105">
+                <button class="btn_td" id="btn_C105" onclick="C105()"></button>
+            </div>
+
+            <div class="td" id="C107">
+                <button class="btn_td" id="btn_C107" onclick="C107()"></button>
+            </div>
+
+            <div class="toilettes" id="toilettes">
+                <button class="btn_toilettes" id="btn_toilettes" onclick="toilettes()"></button>
+            </div>
+
+            <div class="td" id="C114">
+                <button class="btn_tp" id="btn_C114" onclick="C114()"></button>
+            </div>
+
+            <div class="td" id="C115">
+                <button class="btn_tp" id="btn_C115" onclick="C115()"></button>
+            </div>
+
+            <div class="td" id="C116">
+                <button class="btn_tp" id="btn_C116" onclick="C116()"></button>
+            </div>
+
+            <div class="td" id="C119">
+                <button class="btn_tp" id="btn_C119" onclick="C119()"></button>
+            </div>
+
+            <div class="td" id="B104">
+                <button class="btn_tp" id="btn_B104" onclick="B104()"></button>
+            </div>
+
+            <div class="amphi" id="B120">
+                <button class="btn_amphi" id="btn_B120" onclick="B120()"></button>
+            </div>
+
+            <div class="sco" id="sco">
+                <button class="btn_sco" id="btn_sco" onclick="sco()"></button>
+            </div>
+
+
+        </div>
+
+        <!--Division contenant la légende et les descriptions des salles-->
+        <div class ="details">
+
+            <!--Division contenant les légendes des différentes zones cliquables du plan-->
+            <div class = "legende">
+                <h2>Légendes</h2>
+
+                <!--Division contenant la première légende-->
+                <div class = legend>
+                    <div id="legende_sco"></div>
+                    <span> - Scolarité</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_bureaux"></div>
+                    <span> - Bureaux / Administration / Locaux personnel</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_tp"></div>
+                    <span> - Les salles de TP</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_amphi"></div>
+                    <span> - L'amphithéâtre </span>
+                </div>
+                <div class = legend>
+                    <div id="legende_td"></div>
+                    <span> - Les salles de cours</span>
+                </div>
+                <div class = legend>
+                    <div id="legende_toilettes"></div>
+                    <span> - Les toilettes</span>
+                </div>
+            </div>
+
+
+            <!-- Division contenant l'affichage des diférentes descriptions de salles -->
+            <div class = "descriptions">
+                <div><p><b>Clique sur une salle pour en savoir plus !</b></p></div>
+                
+                <div class = "description" id = "desc_C102">
+                    <p>Voici le labo de mécatronique. </p>
+                    <button class = "GO" id = "go_C102" onclick="go_C102()"> Y aller </button>
+                </div>
+
+                <div class = "description" id = "desc_C103">
+                    <p>Les salles C103 et C104 sont des salles de TD classiques. </p>
+                    <button class = "GO" id = "go_C103" onclick="go_C103()"> Y aller </button>
+                </div>
+
+                <div class = "description" id = "desc_C105">
+                    <p>La salle C105 est la plus grande des salles de TD. Elle est aussi souvent utilisée pour les CM.  </p>
+                    <button class = "GO" id = "go_C105" onclick="go_C105()"> Y aller </button>
+                </div>
+
+                <div class = "description" id = "desc_C107">
+                    <p>Les salles C107 à C111 sont toutes des salles de TD.</p>
+                    <button class = "GO" id = "go_C107" onclick="go_C107()"> Y aller </button>
+                </div>
+
+                <div class = "description" id = "desc_toilettes">
+                    <p>Voici les toilettes de l'étage !</p>
+                    <button class = "GO" id = "go_toilettes" onclick="go_toilettes()"> Y aller </button>
+                </div>
+
+                <div class = "description" id = "desc_C114">
+                    <p>La salle C114 est une salle de TP de mécanique.</p>
+                    <button class = "GO" id = "go_C114" onclick="go_C114()"> Y aller </button>
+                </div>
+
+                <div class = "description" id = "desc_C115">
+                    <p>La salle C115 est une salle de TP de physique. </p>
+                    <button class = "GO" id = "go_C115" onclick="go_C115()"> Y aller </button>
+                </div>
+
+                <div class = "description" id = "desc_C116">
+                    <p>Les salles C116 et C117 sont des salles de TP d'électromagnétisme et matériaux. </p>
+                    <button class = "GO" id = "go_C116" onclick="go_C116()"> Y aller </button>
+                </div>
+
+                <div class = "description" id = "desc_C119">
+                    <p>Les salles C119 à C121 sont des salles de TP d'automatisation et électricité. </p>
+                    <button class = "GO" id = "go_C119" onclick="go_C119()"> Y aller </button>
+                </div>
+
+                <div class = "description" id = "desc_B104">
+                    <p>La salle B104 est une salle de TP de mécanique. </p>
+                    <button class = "GO" id = "go_B104" onclick="go_B104()"> Y aller </button>
+                </div>
+
+                <div class = "description" id = "desc_B120">
+                    <p>Voici l'amphithéâtre du premier étage ! </p>
+                    <button class = "GO" id = "go_B120" onclick="go_B120()"> Y aller </button>
+                </div>
+
+                <div class = "description" id = "desc_sco">
+                    <p>Ceci est la scolarité ! C'est là que les élèves peuvent consulter leurs copies ou régulariser leurs absences, par exemple... </p>
+                    <button class = "GO" id = "go_sco" onclick="go_sco()"> Y aller </button>
+                </div>
+                
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <script src="../JavaScript/etage_1.js"></script>
+
+
+</body>
+
+
+
+</html>
+
