@@ -3,7 +3,6 @@
 <head>
 </head>
 <body>
-
 	<form name="ContactForm" method="post" action="">
 		<label for="message">Message:</label><br />
 		<input type="text" name="message" id="message"><br />
