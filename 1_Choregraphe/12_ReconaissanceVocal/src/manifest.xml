@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="testnaoprojetapp-24284f">
+<package uuid="reconnaissancevocale-4878b3">
  <names>
-  <name lang="en_US">Test nao projet app</name>
+  <name lang="en_US">ReconnaissanceVocale</name>
  </names>
  <supportedLanguages>
   <language>en_US</language>

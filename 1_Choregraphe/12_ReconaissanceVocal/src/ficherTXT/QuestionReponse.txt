@@ -1,0 +1,51 @@
+
+$Bonjour$Salut$hello
+Bonjour et bienvenue a Polytech Annecy. Je suis a votre disposition si vous avez besoin de renseignements, ou si vous avez besoin d aide pour trouver une salle. Pour interagir avec moi,  merci de parler distinctement, mes oreilles se situent au sommet de mon crane.
+Coucou
+
+$Est-ce que tu as froid aux pieds?
+Oui, je voudrais bien que tu me tricotes une paire de chaussettes.
+Dance
+
+$Ou est la salle de math ?$Ou est la salle de mathematiques ?
+Voulez vous aller a la salle de mathematique ?
+/
+
+$Ou est la salle d info ?$Ou est la salle d informatique ?
+Voulez vous aller a la salle d'informatique ?
+/
+
+$Ou est la salle d electricite ?$Ou est la salle d elec ?$Ou est la salle d electronique ?
+Voulez vous aller a la salle d'electronique ?
+/
+
+$Ou est la salle d auto ?$Ou est la salle d automatisation ?
+Voulez vous aller a la salle de automatisation ?
+/
+
+$Ou est la salle de materieaux ?
+Voulez vous aller a la salle de materieaux ?
+/
+
+$Ou est la salle de mecanique ?$Ou est la salle de meca ?
+Voulez vous aller a la salle de mecanique ?
+/
+
+$Ou est la salle de optique ?
+Voulez vous aller a la salle de optique ?
+/
+
+$Ou est la salle de mecatronique ?
+Voulez vous aller a la salle maison de la mecatronique ?
+/
+
+$ognak gnouk$oguenaknouke
+Whoa tu mimite tres bien
+/
+
+$Je suis ton pere !
+NOOOOOOOOOOOOOOOOONNNNNNNNNNN! Ce n'est pas possible
+bouge les bras
+
+
+
