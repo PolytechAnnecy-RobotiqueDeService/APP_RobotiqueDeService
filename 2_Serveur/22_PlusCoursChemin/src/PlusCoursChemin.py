@@ -1,10 +1,10 @@
 import math
 from PIL import Image, ImageDraw
-HistoriqueTOTAL=[] #garde en memoire tout les point meme les ereuure
-HistoriqueDesPoint =[] #garde que les point important
+HistoriqueTOTAL=[] #garde en memoire tous les points meme les erreurs
+HistoriqueDesPoint =[] #garde que les points importants
 ListePoint2eme = [[3,5],[22,25],[19,6],[4,5],[4,7],[7,5],[8,5],[7,6],[12,5],[12,6],[11,6],[17,5],[18,6],[15,12],[18,12],[20,13],[20,14],[20,17],[20,21],[21,26],[25,26],[27,26],[26,29],[28,29],[28,30],[28,33],[28,35],[28,36],[28,38],[28,41],[32,26],[36,26],[39,26],[40,26],[39,28],[38,30],[39,30],[39,33],[39,36],[39,38],[39,41],[26,6],[27,6],[28,6],[29,6],[33,6]]
 ListePoint1er = [[25,18],[26,15],[5,9],[7,9],[7,11],[12,9],[11,10],[16,9],[15,10],[20,9],[25,9],[30,9],[30,10],[36,9],[36,10],[41,9],[43,10],[46,9],[48,10],[25,17],[20,17],[20,30],[27,20],[27,21],[27,25],[27,32],[28,35],[36,35],[37,35],[37,40],[37,44],[37,47],[37,50],[37,54],[42,35],[43,36],[44,36],[46,35],[48,35],[51,35],[51,40],[51,44],[51,47],[51,51],[51,54]]
-ListeLiaision2eme = [[[3,5],[4,5]], #deffinistion des liaison
+ListeLiaision2eme = [[[3,5],[4,5]], #definition des liaisons
                 [[3,5],[4,7]],
                 [[19,6],[18,6]],
                 [[22,25],[21,26]],
@@ -267,7 +267,7 @@ def historiqueAdd (point): # ajoute dans l'historique le point actuelle et ses v
     HistoriqueDesPoint.append(res)
 
 def historiqueAddReturnCroisement(point):
-    #Je suprime tout les donne entre le point nouveaux point et le cus de sac
+    #Je supprime toutes les donnees entre le point nouveaux point et le cul de sac
     while (HistoriqueDesPoint[-1][0] != point):
             HistoriqueDesPoint.pop()
             print("pop")
@@ -281,7 +281,7 @@ def resultat(): # revoie que le chemin
     return res
 
 
-def pointInHisto(point): # renvoie les point voisin si il sont dans l'historique
+def pointInHisto(point): # renvoie les points voisins s'ils sont dans l'historique
     for i in range (len(HistoriqueDesPoint)):
         if (HistoriqueDesPoint[i][0] == point):
             return HistoriqueDesPoint[i][2]
@@ -313,7 +313,7 @@ def GenereImage(resultat):
     image.save("../image/resultatDuChemin.png", "png")
                  
       
-def Inisiatlisation(etage): # set les bonne donner
+def Inisiatlisation(etage): # set les bonnes donnees
     global Urlplant
     global ListeLiaision
     global ListePoint

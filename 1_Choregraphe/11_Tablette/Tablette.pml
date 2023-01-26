@@ -21,6 +21,8 @@
         <File name="sabreslasers" src="html/pages/images/sabreslasers.png" />
         <File name="supertropclasse" src="html/pages/images/supertropclasse.png" />
         <File name="supertropviolet" src="html/pages/images/supertropviolet.png" />
+        <File name="etage_1" src="html/pages/JavaScript/etage_1.js" />
+        <File name="etage_2" src="html/pages/JavaScript/etage_2.js" />
     </Resources>
     <Topics />
     <IgnoredPaths />
