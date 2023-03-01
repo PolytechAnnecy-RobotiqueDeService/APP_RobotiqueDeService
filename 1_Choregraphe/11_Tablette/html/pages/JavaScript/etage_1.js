@@ -40,6 +40,7 @@ function C102(){
     document.getElementById("sco").style.opacity = "0.7";
 }
 
+
 function C103(){
     /* Affichage de la description de la salle C202 uniquement */
     document.getElementById("desc_C102").style.display = "none";
