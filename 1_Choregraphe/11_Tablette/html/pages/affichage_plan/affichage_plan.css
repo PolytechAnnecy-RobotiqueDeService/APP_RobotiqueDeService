@@ -1,0 +1,60 @@
+/*------------------------------------------*/
+/*FEUILLE DE STYLE POUR LA PAGE etage_2.html*/
+/*------------------------------------------*/
+
+/* -- Style du contenu de manière générale -- */
+header{
+    align-items: center;
+}
+.btn_accueil{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.contenu{
+    display : flex;
+    flex-wrap: wrap;
+    flex-direction : row;
+    justify-content: space-around;
+}
+
+/* -- Définition du plan comme fond de la division plan -- */
+.plan{
+    background-image: url("../images/chemin_genere.png");
+    width : 493px;
+    height : 490px;
+}
+
+
+
+
+
+
+
+
+/** ------------------------------------------------ **/
+/** -- STYLE DE LA PARTIE LÉGENDE ET EXPLICATIONS -- **/
+/** ------------------------------------------------ **/
+
+/*Réglage de l'organisation de l'affichage de cette partie*/
+.details{
+    display : flex; 
+    flex-direction : column;
+    width : 400px;
+    /*background-color: antiquewhite;*/
+    padding: 15px;
+}
+
+
+/*Style des éléments individuels de la légende*/
+.qrcode{
+    background-image: url("../images/qr_code.png");
+    width : 200px;
+    height : 200px;
+}
+
+
+/** ------------------------------------------------------- **/
+/** -- FIN DU STYLE DE LA PARTIE LÉGENDE ET EXPLICATIONS -- **/
+/** ------------------------------------------------------- **/
