@@ -1,0 +1,16 @@
+gauche
+26.08
+1
+
+gauche
+13.04
+1
+
+droite
+3.26
+1
+
+droite
+13.04
+0
+
