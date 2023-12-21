@@ -1,0 +1,172 @@
+<index>
+    <head>
+        <title>APP Robots</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" media="screen" href="1_objectifs.css" /> 
+        <link rel="icon" type="image/png" sizes="16x16" href="../documents/icone_site.png"> 
+    </head>
+
+
+    <body style="margin: 0;"> <!-- CONTENU PRINCIPAL DE LA PAGE -->
+		<div id="fond">
+			
+			<div id="titre">
+				<span>APP ROBOTS</span> <!-- titre du site -->
+			</div>
+			
+			<div id="menu">
+                <div class="lemenu"><a href="../index.html" class="btn_menu" id="inactif">Accueil</a></div>
+                <div class="lemenu"><a href="1_objectifs.html" class="btn_menu" id="actif">Objectifs</a></div>
+                <div class="lemenu"><a href="2_avancement.html" class="btn_menu" id="inactif">Avancement</a></div>
+				<div class="lemenu"><a href="5_promotionDocumentation.html" class="btn_menu" id = "inactif">Promotion</a></div>  
+                <div class="lemenu"><a href="3_equipe.html" class="btn_menu" id="inactif">Notre équipe</a></div> 
+                <div class="lemenu"><a href="4_archives.html" class="btn_menu" id="inactif">Archives</a></div> 
+			</div>
+
+			<div id="contenu"> <!-- division réservé au contenu des pages -->
+                <h1>Objectifs</h1>
+				<p class="texte">Comme indiqué en page d'accueil, notre thème est la robotique de service, et nous avons choisi d'utiliser les robots à notre disposition (Pepper et Nao, de Softbank Robotics) afin d'organiser une visite guidée de notre établissement faite par ces robots. Pour cela, nous avons établi un cahier des charges détaillé. L'objectif principal de notre second semestre de travail était la rédaction de ce cahier des charges. Nous avons décidé d'opter pour un cahier des charges par niveau de difficulté, le premier niveau comprenant des fonctionnalités que nous avons jugées faciles à implémenter, et le dernier niveau (le niveau 4) comprenant un idéal à atteindre, dans le cas où nous aurions plus de temps. Les différents niveaux du cahier des charges sont détaillés ci-dessous, et vous trouverez la version rédigée de notre cahier des charges en annexe de notre rapport de fin de semestre 7 sur notre page Archives. La page Avancement décrit notre avancement sur ce projet et des explications un peu plus détaillées sur les différents concepts que vous croiserez dans le cahier des charges. </p>
+		
+				<h2>Niveau 1 du cahier des charges (fonctionnalités essentielles, atteint en fin de deuxième semestre)</h2>
+
+				<ul>
+
+					<details>
+						<summary><b>Déplacement de Pepper</b></summary>
+						<p>Pas de déplacement prévu pour ce niveau, simple affichange du plan sur la tablette.</p>
+					</details>
+
+					<details>
+						<summary><b>Interaction humains - robots</b></summary>
+						<p>Discours de bienvenue et réaction à des mots-clé et phrases pré-écrites (par exemple, présentation des différentes filières sur demande). </p>
+					</details>
+
+					<details>
+						<summary><b>Tablette tactile</b></summary>
+						<p>Implémentation du site de la tablette : affichage du plan selon l'étage et explication générale des salles. </p>
+					</details>
+
+					<details>
+						<summary><b>Serveur</b></summary>
+						<p>Création du serveur : établissement d'une connexion entre les différents clients (Pepper, Nao, tablette), réception et traitement de requêtes simples (par chaîne de caractère uniquement). </p>
+					</details>
+
+					<details>
+						<summary><b>Sécurité</b></summary>
+						<p>Ajout d'un bouton d'arrêt d'urgence sur la tablette en cas de problème sur Pepper [abandonné]. </p>
+					</details>
+
+				</ul>	
+
+
+				<h2>Niveau 2 du cahier des charges (fonctionnalités qu'on aimerait mettre en place avant la fin)</h2>
+
+				<ul>
+
+					<details>
+						<summary><b>Déplacement de Pepper</b></summary>
+						<p>Faire faire un chemin prédéfini en boucle à Pepper. </p>
+					</details>
+
+					<details>
+						<summary><b>Interaction humains - robots</b></summary>
+						<p>Rendre les robots plus "vivants" avec l'utilisation de LEDs et mouvements pour imiter des émotions, par exemple. </p>
+					</details>
+
+					<details>
+						<summary><b>Tablette tactile</b></summary>
+						<p>Affichage du chemin le plus court pour aller d'un point A à un point B, et affichage d'un QR code à scanner pour obtenir le plan contenant le chemin sur un téléphone portable. </p>
+					</details>
+
+					<details>
+						<summary><b>Serveur</b></summary>
+						<p>Répondre aux demandes des clients, renvoyer le plan demandé et implémenter l'algorithme de plus court chemin. </p>
+					</details>
+
+					<details>
+						<summary><b>Sécurité</b></summary>
+						<p>Alerte de niveau de batterie faible et alternance des deux Pepper pour assurer un service continu.</p>
+					</details>
+
+				</ul>	
+
+
+				<h2>Niveau 3 du cahier des charges (fonctionnalités qu'on espère mettre en place avant la fin)</h2>
+
+				<ul>
+
+					<details>
+						<summary><b>Déplacement de Pepper</b></summary>
+						<p>Affichage du plan et eventuellement indications à l'oral sur le chemin à suivre. Essai avorté d'un système où Pepper doit suivre un humain en le guidant comme un GPS. </p>
+					</details>
+
+					<details>
+						<summary><b>Interaction humains - robots</b></summary>
+						<p>Compréhension du sens d'une phrase afin d'obtenir une interaction fluide. </p>
+					</details>
+
+					<details>
+						<summary><b>Tablette tactile</b></summary>
+						<p>Actualisation du plan avec affichage de la position du robot en temps réel.</p>
+					</details>
+
+					<details>
+						<summary><b>Serveur</b></summary>
+						<p>Réception et traitement des informations sur Pepper. Traitement de l'algorithme de plus court chemin. </p>
+					</details>
+
+					<details>
+						<summary><b>Sécurité</b></summary>
+						<p>Implémentation d'un "mode opérateur" où Pepper est guidé par une télécommande virtuelle sur la tablette tactile. </p>
+					</details>
+
+					<details>
+						<summary><b>Accessibilité</b></summary>
+						<p>Option pour les malentendants [plus vraiment d'actualité étant donné que la plupart des interactions se font sur la tablette]. Option de changement de langue (anglais) sur le site de la tablette tactile. </p>
+					</details>
+
+				</ul>	
+
+
+				<h2>Niveau 4 du cahier des charges (réalisation idéale, si nous avions plus de temps pour l'implémenter)</h2>
+
+				<ul>
+
+					<details>
+						<summary><b>Déplacement de Pepper</b></summary>
+						<p>Déplacement en suivi de mur du robot qui peut suivre le chemin et guider les visiteurs à l'endroit souhaité. </p>
+					</details>
+
+					<details>
+						<summary><b>Interaction humains - robots</b></summary>
+						<p>Interaction fluide avec un interlocuteur. </p>
+					</details>
+
+					<details>
+						<summary><b>Tablette tactile</b></summary>
+						<p>Affichage du plan actualisé en temps réel avec la position des deux robots. Récupérer la base de donnée des événements se déroulant dans les salles afin de les présenter aux visiteurs.</p>
+					</details>
+
+					<details>
+						<summary><b>Serveur</b></summary>
+						<p>Récupérer les plans du bâtiment dans lesquels les robots sont intallés (afin de pouvoir changer les robots de bâtiment pour d'autres visites, et sous réserves que ces informations soient rendues disponibles par le bâtiment). </p>
+					</details>
+
+					<details>
+						<summary><b>Accessibilité</b></summary>
+						<p>Option de changement de langues avec plusieurs choix. </p>
+					</details>
+
+				</ul>	
+
+			</div>
+		
+		</div>
+
+		<div id="pied">
+				<span>Polytech Annecy-Chambéry - Apprentissage Par Projets - Robots</span>
+		</div>
+
+	</body>
+
+</index>

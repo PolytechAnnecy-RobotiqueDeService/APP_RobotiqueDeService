@@ -1,0 +1,161 @@
+<index>
+    <head>
+        <title>APP Robots</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" media="screen" href="2_avancement.css" /> 
+        <link rel="icon" type="image/png" sizes="16x16" href="../documents/icone_site.png"> 
+    </head>
+
+
+    <body style="margin: 0;"> <!-- CONTENU PRINCIPAL DE LA PAGE -->
+		<div id="fond">
+			
+			<div id="titre">
+				<span>APP ROBOTS</span> <!-- titre du site -->
+			</div>
+			
+			<div id="menu">
+                <div class="lemenu"><a href="../index.html" class="btn_menu" id = "inactif">Accueil</a></div>
+                <div class="lemenu"><a href="1_objectifs.html" class="btn_menu" id = "inactif">Objectifs</a></div>
+                <div class="lemenu"><a href="2_avancement.html" class="btn_menu" id = "actif">Avancement</a></div>
+                <div class="lemenu"><a href="5_promotionDocumentation.html" class="btn_menu" id = "inactif">Promotion</a></div>  
+                <div class="lemenu"><a href="3_equipe.html" class="btn_menu" id = "inactif">Notre équipe</a></div> 
+                <div class="lemenu"><a href="4_archives.html" class="btn_menu" id = "inactif">Archives</a></div> 
+			</div>
+
+			<div id="contenu"> <!-- division réservé au contenu des pages -->
+                <h1>Suivi du projet</h1>
+              
+                <div>
+                    <p class="text">Sur cette page seront expliqués les aspects techniques de l'avancement de notre projet. Dans la page des archives, vous trouverez tous nos compte-rendus de séances ainsi que nos rapports de fin de semestres. L'objectif de cette page est d'expliquer clairement ce que nous avons fait, sans noyer notre lecteur dans les détails ! Les concepts seront donc simplifiés pour la plupart, et vous pourrez trouver plus d'informations dans nos compte-rendus sur la page dédiée aux archives, et particulièrement dans les rapports de fin de semestres. </p>
+                    <p class="text">Durant ce projet, nous avons utilisé les robots Pepper et Nao de Softbanks Robotics. Nous les avons programmés à l'aide du logiciel Choregraphe, qui permet de faire faire des actions simples aux robots par programmation graphique, mais également d'approfondir la programmation en utilisant le langage Python Aldébaran. Les boîtes d'action du logiciel sont programmées dans ce langage, et nous en avons modifié et écrit quelques-unes pour notre utilisation personnelle. </p>
+
+                    <br>
+                </div>
+
+                <div>
+
+                    <ul>
+                        <li> <h3>Déplacement de Pepper</h3>
+                            <p class="text">Pour rappel, notre but ultime est que Pepper soit capable d'effectuer une visite guidée en autonomie. Depuis notre deuxième semestre de travail, nous disposons de deux robots Pepper, que nous avons l'intention de positionner respectivement au premier et deuxième étage de Polytech (le robot se déplace sur roulettes et ne peut pas franchir les escaliers). Pour cela, nous avons besoin de mettre une méthode de déplacement sûre et efficace, et de faire en sorte que le robot sache quel chemin emprunter pour aller d'un endroit à un autre. Nous avons donc mis en place des algorithmes de suivi de mur pour le déplacement, et un algorithme de plus court chemin pour la trajectoire générale. </p>
+
+                            <details>
+                                <summary><b>Algorithme de suivi de mur</b></summary>
+                                <p class="text">Pour le déplacement de Pepper, nous avons mis en place un algorithme de suivi de mur sur le logiciel Choregraphe. Pepper dispose de capteurs infrarouges qui lui permettent de détecter la distance à laquelle il se trouve des obstacles autour de lui. Nous avons utilisé ces capteurs pour déterminer sa distance à un mur. Il existait, dans Choregraphe, une boîte de déplacement, mais nous l'avons modifiée afin non seulement d'éviter la dérive (Pepper revoit sa position lorsque la distance n'est plus la bonne), mais aussi de détecter les intersections (les irrégularités du sol se font ressentir sur la distance parcourue par le robot, et détecter les intersections nous permet d'être certains de sa position dans son parcours). Nous avons également effectué des tests pour vérifier la fiabilité de cette méthode et corriger les erreurs de distance. Cette fonctionnalité nous a pris énormément de temps. Nous avons récupéré le code d'anciens élèves pour s'en inspirer, avons commencé à travailler dessus dès le début de notre projet, et ne l'avons pas terminé avant la toute fin du troisième semestre de travail (le quatrième et dernier semestre d'APP étant axé sur la mise en valeur de notre projet, il faut que l'implémentation en soit terminée à ce moment-là). La détection des intersections, la manière de tourner, la façon de recevoir les instructions du robot, étaient autant de difficultés à surmonter. Il a également fallu faire attention à tous les endroits du bâtiment où le déplacement ne se faisait pas correctement. Pour mettre en place le déplacement de Pepper, nous avons également dû mettre en place un algorithme de plus court chemin, qui donnait toutes les indications au robot.</p>
+                            </details>
+
+                            <details>
+                                <summary><b>Algorithme de plus court chemin</b></summary>
+                                <p class="text">L'algorithme de suivi de mur permet uniquement à Pepper de se déplacer tout droit, en suivant un mur. Nous avons codé un algorithme de plus court chemin en Python afin de déterminer la trajectoire que devrait suivre le robot. Pour ce faire, nous avons découpé le plan de chaque étage en un quadrillage régulier afin de déterminer les coordonnées de chacun des points d'intérêt du bâtiment - en l'occurence, les salles à visiter. Cet algorithme, dont le protocole est à retrouver en annexe du rapport de fin de semestre huit sur la page des archives, génère le chemin le plus court à emprunter pour se déplacer d'un point à un autre. C'est cette trajectoire que nous envoyons à Pepper, sous la forme d'une suite d'instructions à la manière d'un GPS, afin que le robot se déplace suivant une trajectoire logique pour emmener les visiteurs là où ils le souhaitent. Une fois l'algorithme implémenté, il a fallu détecter tous les bugs (mauvais placement d'un point, cas particulier dû à la forme du bâtiment...) pour les régler au cas par cas, et mettre en place un système de communication clair entre cet algorithme et le logiciel Choregraphe qui doit savoir interpréter les instructions pour les mettre en place. </p>
+
+                                <p>Le plan à suivre est affiché sur la tablette de Pepper (cf partie suivante "Interaction homme-machine"), avec un QR code permettant à l'utilisateur de scanner ce plan sur son téléphone. Voici l'affichage sur tablette de cette page, pour une trajectoire allant de la salle C204 à la salle A214 (passe la souris sur l'image pour l'agrandir) : </p>
+
+                                <div class = "img_container">
+                                    <img class = "img" src="../documents/images/tablette_plan_et_qrcode.PNG" width="30%">
+                                </div>
+                            </details>
+                            <br><br>
+                        </li>
+
+                        <li><h3>Interaction homme - machine</h3>
+
+                            <p class="text">Pour que le projet fonctionne, il ne suffit pas que Pepper puisse se déplacer, il faut également que le robot et le visiteur puissent communiquer. Il a été dit plus haut et les deux robots Pepper seront positionnés pour faire visiter les étages 1 et 2 de notre bâtiment Polytech Annecy. Comme mentionné sur notre page d'accueil, le robot Nao n'est pas assez stable ni rapide pour faire office de guide, et sa batterie ne tient pas très longtemps. Il a donc été décidé de le positionner dans le hall d'entrée, au rez-de-chaussée, afin d'accueillir le visiteur et éventuellement les rediriger vers les Pepper pour la visite des étages. Nous avons donc mis en place deux méthodes de communication : une communication orale, destinée principalement à Nao et accessible à tous les robots ; et l'utilisation de la tablette tactile intégrée sur le robot Pepper, qui servira uniquement pour les visites.</p>
+
+                            <details>
+                                <summary><b>L'interaction orale</b></summary>
+                                <p class="text">La façon la plus pratique de communiquer avec Nao est à l'oral. Si ses micros ne sont pas très performants, et que l'agitation d'une journée portes ouvertes risque de gêner grandement la compréhension du robot, nous avons tout de même mis en place un système de communication de cette sorte sur Choregraphe. Nous avons exploré la piste d'une reconnaissance vocale délocalisée, en utilisant le serveur pour comprendre les phrases de l'utilisateur et trouver quoi répondre, mais avons finalement choisi une reconnaissance vocale intégrée. Pour cela, nous avons mis au point une liste de mots et de phrases pré-enregistrées auxquelles le robot saura quoi répondre grâce à un fichier texte connaissant déjà les questions et leurs réponses. Cela a pour inconvénient d'être moins fluide et de devoir dire exactement la phrase que le robot est capable de reconnaître, sans aucune variation possible, mais cette méthode était plus facile à utiliser grâce au bloc "speech reco" déjà intégré dans Chorégraphe, et l'interaction orale n'était pas notre priorité sur ce projet. À nouveau, les détails de la mise en place de cette fonctionnalité sont à retrouver sur les différents rapports de fin de semestres dans la page dédiée aux archives.</p>
+
+                            </details>
+
+                            <details>
+                                <summary><b>La tablette tactile</b></summary>
+                                <p class="text">Les robots Pepper ont une tablette tactile intégrée et indépendante du robot. Nous avons codé une application web à afficher sur cette tablette, avec une page d'accueil permettant de naviguer sur les plans des différents étages. Pour chaque étage, un plan s'affiche avec une légende expliquant les différents types de salle. L'utilisateur peut ainsi sélectionner la salle qu'il souhaite visiter, et en lire une courte présentation. S'il le souhaite, il peut ainsi afficher le plan avec la trajectoire générés par l'algorithme de plus court chemin, et même scanner un QR code lui permettant d'obtenir ce plan sur son téléphone portable. C'est en utilisant la tablette tactile que l'utilisateur peut communiquer avec le robot et lui demander de le guider à un endroit en particulier. Cette application web a été codée uniquement en HTML/CSS et Javascript, et utilise également du PHP pour la partie serveur à retrouver plus bas. Des copies d'écran montrant cette application sont présentes en rapport de fin de semestre 7 à retrouver dans la page dédiée aux archives. </p>
+
+                                <p>Voici des images de la page d'accueil de l'application web, de la page du premlier étage, et enfin de la page du deuxième étage avec la présentation de notre salle de travail (passe la souris sur l'image pour l'agrandir) : </p>
+
+                                <div class = "img_container">
+                                    <img class = "img" src="../documents/images/tablette_accueil.PNG" width="20%">
+                                    <img class = "img" src="../documents/images/tablette_etage_1.PNG" width="20%">
+                                    <img class = "img" src="../documents/images/tablette_etage_2.PNG" width="20%">
+                                </div>
+                            </details>
+
+                            <br><br>
+                        </li>
+
+                        <li><h3>Lien entre les différentes parties du projet</h3>
+
+                            <p class="text">Toutes les fonctionnalités mentionnées plus haut ne font pas le projet en lui-même si elles ne peuvent pas communiquer entre elles. Nous avons mis en place un système de serveur multi-thread pour faire le lien entre les différentes parties du projet. De même, les différents membres du groupe ont besoin de communiquer entre eux pour se mettre d'accord (par exemple sur la manière de communiquer les instructions de l'algorithme de plus court chemin à Pepper), et nous avons utilisé différents outils pour cela. </p>
+
+                            <details>
+                                <summary><b>Serveur</b></summary>
+                                <p class="text">Informatiquement parlant, nous avions besoin d'un serveur pour faire le lien entre les différentes parties du projet. Pour nommer un exemple concret : c'est le serveur qui reçoit, de la part de la tablette, la destination voulue, utilise l'algorithme de plus court chemin pour déterminer une trajectoire, et enfin envoie les instructions au projet Choregraphe de suivi de mur et le plan et QR code à afficher sur la tablette. Nous avons donc codé un serveur en langage Java. Nous avons codé des clients correspondants aux robots Nao et Pepper en Python Aldébaran, et un client pour la tablette en PHP et Javascript. Un client local codé en Python permet également de traiter l'algorithme de plus court chemin. En commençant ce projet, nous n'avions aucune idée du fonctionnement d'un serveur, et nous avons passé un certain temps à nous renseigner sur le langage le plus approprié pour nous et à faire différents essais. Les détails du fonctionnement et de l'évolution de notre serveur sont à retrouver dans les différents rapports de fin de semestre sur la page dédiée aux archives.</p>
+                            </details>
+
+                            <details>
+                                <summary><b>Communication au sein de l'équipe</b></summary>
+                                <p class="text">Au sein d'une équipe, et particulièrement pour une équipe aussi nombreuse que la notre pour les trois quarts de notre projet, la communication est cruciale. Nous faisions bien sûr une réunion générale à chaque séance pour que chacun soit au courant de tout ce qui avait été réalisé durant la séance, et la rédaction d'un compte-rendu de fin de séance nous obligeait de toute façon à nous tenir à jour de l'avancée de la séance. Mais nous avons également dû trouver des manières de partager notre code. Nous avons pour cela utilisé un git, mais avons également codé une bibliothèque Choregraphe dans laquelle entreposer tous les blocs que nous avions codés ou modifiés nous-mêmes afin qu'ils soient facilement à disposition de tous. Les détails de cette bibliothèque sont à retrouver dans le rapport de fin de semestre 7 sur la page dédiée aux archives. Nous avons également utilisé les outils Gantt et Trello pour nous organiser. </p>
+                            </details>
+
+                            <br><br>
+                        </li>
+
+                        <!-- <li><h3>Mise en valeur du projet</h3>
+
+                            <p class="text">Notre dernier semestre était consacré à la mise en valeur de notre projet. C'est également dans cette optique que ce site a été créé.</p>
+
+                            <details>
+                                <summary><b>Fonctionnalité</b></summary>
+                                <p class="text">Explication</p>
+                            </details>
+
+                            <br><br>
+                        </li> -->
+
+                    </ul>
+                </div>
+
+
+
+
+                <!-- <div id = "en_cours">
+                    
+                    Essayer de faire se déplacer Pepper par suivi de mur à l'aide de ses capteurs de distance. Voici une vidéo de démonstration où Pepper négocie un virage :</br>
+                        <p id=video1><video class="video" controls><source src="./documents/videos/capsule_demo_deplacement.mp4"></video></p>
+                </div> -->
+
+
+                <!-- <div id="galerie_photo">    il faudrait rajouter des photos dans la galerie
+                    </br>
+                    <p>Galerie photo :</p>
+                    <div id = "image"><img src = "../documents/images/image1.jpg" sizes="16x16"><img src = "../documents/images/image2.jpg" sizes="16x16"><img src = "../documents/images/image1.jpg" sizes="16x16"><img src = "../documents/images/image1.jpg" sizes="16x16"></div>
+                </div>
+                    <img src = "pepper2.jpg">
+                <div> -->
+
+                                    <!--carroussel d'images du projet (non fonctionnel)-->
+                <!-- <div class="carroussel">
+                    <div class="points">
+                        <label for="slide-dot-1"></label>
+                        <label for="slide-dot-2"></label>
+                    </div>
+                    
+                    <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                    <img class="slide-img" src="../documents/images/welcome.jpg">
+
+                    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                    <img class="slide-img" src="../documents/images/Rpepper.jpg">
+                </div> -->
+    
+
+            </div>
+
+        </div>
+
+        <div id="pied">
+                <span>Polytech Annecy-Chambéry - Apprentissage Par Projets - Robots</span>
+        </div>
+
+	</body>
+
+</index>

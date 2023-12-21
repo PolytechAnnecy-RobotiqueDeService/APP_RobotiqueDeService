@@ -1,0 +1,327 @@
+/*SPECIFIQUE A LA PAGE*/
+img{
+    max-width : 200px;
+    max-height : 200px;
+    margin : 20px;
+}
+
+.text{
+  text-align: justify;
+  text-indent: 30px;
+}
+
+div#galerie_photo{
+    position:relative;
+}
+
+div#image{
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.img_container{
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.img {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px; 
+  margin-right: 15px;
+}
+.img:hover{
+  transform: scale(2);
+  border : solid 2px antiquewhite;
+}
+
+/*
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+*/
+div#titre{
+    width : auto;
+    height : auto;
+    /*margin : 20px;*/
+}
+
+p#video1{
+    text-align: center;
+}
+
+.video{  
+	width: 70%;
+	border-radius: 5%;
+}
+
+/*-------------------------------------*/
+
+img {
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+.carroussel {
+    max-width: 600px;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.points {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.points label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: rgb(125, 181, 189);
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.points label:hover,.points label:focus {
+    background: #154b61;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+}
+  [id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+/*FIN SPECIFIQUE A LA PAGE*/
+
+/*Fonts*/
+@font-face {
+    font-family: font_normal;
+    src: url(fonts/font_normal.woff);
+  }
+  @font-face {
+    font-family: font_light;
+    src: url(fonts/font_light.woff);
+  }
+  @font-face {
+    font-family: font_bold;
+    src: url(fonts/font_bold.woff);
+  }
+  @font-face {
+    font-family: font_title;
+    src: url(fonts/font_title.woff);
+  }
+  
+  
+  
+  /* Esthétique générale de la page */
+  #fond{
+      width: 100%;
+      margin: 0px 0px 0px 0px;
+      background-color: #004643;
+      border: 8px;
+      border-color: #004643;
+      box-sizing: border-box;
+      
+      padding: 25px 25px 25px 25px;
+    }
+    
+  #titre{
+      margin: 5px;
+      text-align: center;
+      flex-basis: 100%;
+    }
+  
+  #titre span{
+      font-family: font_title;
+      font-weight:bold;
+      font-size: 40pt;
+      color :#ffffff;
+  }
+  
+  h1 {
+      font-family: font_bold;
+  }
+    
+    
+    /* Gestion du menu */
+  
+    
+    #menu a{
+      text-decoration:none;
+      width :100%;
+    }
+    
+    ul#lemenu{
+      list-style: none;
+      margin: 0px 0px 3px 0px;
+      padding: 0px;
+    }
+  
+    ul#lemenu li{
+      list-style: none;
+      padding: 0px;
+    }
+    
+    
+    /* Gestion du reste de la page */
+    
+    #contenu{
+      min-height: 600px;
+      padding: 2px 25px 25px 25px;
+      border:2px solid;
+      border-color: #001e1d;
+      background-color: #cde4de;
+      border-radius: 10px;
+      text-align: justify;
+      text-justify: inter-word;
+      
+      font-family: font_normal;
+    }ul#lemenu li
+    
+    #pied{
+      height: 30px;
+      margin: 10px 0px 10px 0px;
+      background-color:#004643;
+      flex-basis: 100%;
+      color: #e8e4e6;
+    }
+    
+    
+    /* Gestion des boutons */
+    
+    .btn_menu {
+       
+      -webkit-border-top-left-radius:15px;
+      -moz-border-radius-topleft:15px;
+      border-top-left-radius:15px;
+      -webkit-border-top-right-radius:15px;
+      -moz-border-radius-topright:15px;
+      border-top-right-radius:15px;
+      -webkit-border-bottom-right-radius:15px;
+      -moz-border-radius-bottomright:15px;
+      border-bottom-right-radius:15px;
+      -webkit-border-bottom-left-radius:15px;
+      -moz-border-radius-bottomleft:15px;
+      border-bottom-left-radius:15px;
+      text-indent:0;
+      border-top: 2px solid #001e1d;
+      border-right: 2px solid #001e1d;
+      border-bottom: 2px solid #001e1d;
+      border-left: 2px solid #001e1d;
+      display:inline-block;
+      color:#001e1d;
+      font-family:font_normal;
+      font-size:16px;
+      font-style:normal;
+      height:35px;
+      line-height:30px;
+      width:152px;
+      text-decoration:none;
+      text-align:center;
+  }
+
+  #inactif{
+    -moz-box-shadow:inset 7px 1px 24px -22px #f9bc60;
+    -webkit-box-shadow:inset 7px 1px 24px -22px #f9bc60;
+    box-shadow:inset 7px 1px 24px -22px #f9bc60;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffb445), color-stop(1, #ffca7b) );
+    background:-moz-linear-gradient( center top, #f9bc60 5%, #ffaa2b 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23');
+    background-color:#f9bc60;
+  }
+  
+  .btn_menu:hover {
+      background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff9d2d), color-stop(1, #ffb84e) );
+      background:-moz-linear-gradient( center top, #a6a39f 5%, #f0eee2 100% );
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64');
+      background-color:#e1a13b;
+  }
+  
+ #actif{
+    position:relative;
+    height:37px;
+    background: #abd1c6;
+    font-family: font_bold;
+  }
+  
+    /* Affichage pour une fenêtre de plus de 730 px */
+  
+    @media only screen and (min-width: 731px){
+      #fond{
+        display : flex;
+        flex-direction: column;
+    }
+
+    #menu{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       justify-content: flex-start;
+       align-items: stretch;
+       
+
+    }
+
+    .lemenu{
+      flex-basis : 20%;
+    }
+
+  }
+ 
+    
+  
+    
+    /* Affichage pour une fenêtre de moins de 730 px */
+  
+    @media only screen and (max-width: 730px){
+  
+      #menu{
+        flex-basis : 100%;
+      }
+  
+  
+  
+      ul#lemenu li{
+        display: flex;
+        flex-direction:column;
+        list-style: none;
+        padding: 0px;
+      }
+  
+      #contenu{
+        flex-basis: 100%;
+      }
+      
+    }
